@@ -2,20 +2,110 @@
 .appVersion = "3260";
 .formatVersion = 3;
 DisplayStrings = (
-"ܠ",
-"/uni072C0710.isol",
-"ܬ",
-"/uni072C.fina",
 "/uni0710.fin3",
-"ܪ",
+"/uni0710.fin2",
+"ܵ",
+"/uni0712.fina",
+"/uni0712.init",
+"ܲ",
 "ܐ",
+"ܹ",
+"ܸ",
+"ܲ",
+"ܿ",
+"/uni0732.above",
+"/uni0732.below",
+"ܼ",
+"ܑ",
+"ܸܹܼ݂̤ܲܵܿ̈/uni0732.above/uni0732.below",
+"̈",
+"̤",
+"݂",
+"݁",
+"ܝ",
+"ܝ/uni071D.fina/uni071D.medi",
+"/uni071D.medi",
 "/uni0710.fina",
 "/uni0710.med2",
-"♱",
-"ܲ",
-"ܵ",
+"/uni0712.medi",
+"/uni071A.medi",
+"/uni071A.fina",
+"ܚ",
+"/uni071A.init",
+"ܒ",
+"/uni071D.fina",
 "ܘ",
-"/uni0718.fina"
+"/uni0718.fina",
+"ܙ",
+"/uni0719.fina",
+"ܓ",
+"/uni0713.fina",
+"/uni0713.medi",
+"/uni0713.init",
+"ܔ",
+"ܕ",
+"/uni0715.fina",
+"/uni0717.fina",
+"/uni071D.init",
+"ܛ",
+"/uni071B.fina",
+"/uni071B.medi",
+"/uni071B.init",
+"ܞ",
+"ܟ",
+"/uni071F.fina",
+"/uni071F.medi",
+"/uni071F.init",
+"ܠ",
+"/uni0720.fina",
+"/uni0720.medi",
+"/uni0720.init",
+"ܡ",
+"/uni0721.fina",
+"/uni0721.medi",
+"/uni0721.init",
+"ܢ",
+"/uni0722.fina",
+"/uni0722.medi",
+"/uni0722.init",
+"ܣ",
+"/uni0723.fina",
+"/uni0723.medi",
+"/uni0723.init",
+"ܥ",
+"/uni0725.fina",
+"/uni0725.medi",
+"/uni0725.init",
+"ܦ",
+"/uni0726.fina",
+"/uni0726.medi",
+"/uni0726.init",
+"ܧ",
+"/uni0727.fina",
+"/uni0727.medi",
+"/uni0727.init",
+"ܨ",
+"/uni0728.fina",
+"ܩ",
+"/uni0729.fina",
+"/uni0729.medi",
+"/uni0729.init",
+"ܪ",
+"/uni072A.fina",
+"ܫ",
+"/uni072B.fina",
+"/uni072B.medi",
+"/uni072B.init",
+"ܬ",
+"/uni072C.fina",
+"ـ",
+"/uni072C0710.isol",
+"/uni07200710.isol",
+"/uni07200710.fina",
+"/uni072C0710.fina",
+"݇",
+"݈",
+"̠"
 );
 customParameters = (
 {
@@ -328,11 +418,11 @@ automatic = 1;
 code = "feature init;
 feature medi;
 feature med2;
-feature fina;
 feature salt;
 feature ss01;
 feature ss02;
 feature stch;
+feature fina;
 feature fin2;
 feature fin3;
 ";
@@ -343,7 +433,10 @@ code = "# Resh-Syameh
 sub uni072A uni0308 by uni072A0308.isol;
 sub uni072A.fina uni0308 by uni072A0308.fina;
 sub uni0716 uni0308 by uni072A0308.isol;
-sub uni0716.fina uni0308 by uni072A0308.fina;";
+sub uni0716.fina uni0308 by uni072A0308.fina;
+
+# Split Ptakha
+sub uni0732 by uni0732.above uni0732.below;";
 tag = ccmp;
 },
 {
@@ -470,869 +563,15 @@ lookup SUB_9;
 tag = stch;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup POS_6 {
-	markClass uni0711 <anchor 0 443> @POS_6_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0308 <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_6_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_6_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_6_0_MARK_0;
-	pos base uni072A0308.isol <anchor 102 -36> mark @POS_6_0_MARK_0;
-	pos base uni072A0308.fina <anchor 98 -36> mark @POS_6_0_MARK_0;
-} POS_6;
-lookup POS_7 {
-	markClass uni0711 <anchor 0 443> @POS_7_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0308 <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_7_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_7_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_7_0_MARK_0;
-	pos base uni25CC <anchor 153 0> mark @POS_7_0_MARK_0;
-} POS_7;
-lookup POS_8 {
-	markClass uni0711 <anchor 0 443> @POS_8_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0308 <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_8_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_8_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_8_0_MARK_0;
-	pos base uni0640 <anchor 93 -49> mark @POS_8_0_MARK_0;
-} POS_8;
-lookup POS_9 {
-	markClass uni0711 <anchor 0 443> @POS_9_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0308 <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_9_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_9_0_MARK_0;
-	markClass uni0742 <anchor 0 0> @POS_9_0_MARK_1;
-	markClass uni0325 <anchor 0 0> @POS_9_0_MARK_1;
-	pos base uni0710 <anchor 215 -24> mark @POS_9_0_MARK_0;
-#	pos base uni0710.fin3 <anchor 215 -24> mark @POS_9_0_MARK_0;
-#	pos base uni0710.fin2 <anchor 215 -24> mark @POS_9_0_MARK_0;
-	pos base uni0710.fina <anchor 215 -24> mark @POS_9_0_MARK_0;
-	pos base uni0710.med2 <anchor 374 -90> mark @POS_9_0_MARK_0;
-	pos base uni0712.fina <anchor 230 -48> mark @POS_9_0_MARK_0 <anchor 407 -41> mark @POS_9_0_MARK_1;
-	pos base uni0712.medi <anchor 148 -49> mark @POS_9_0_MARK_0 <anchor 293 -40> mark @POS_9_0_MARK_1;
-	pos base uni0712.init <anchor 278 -75> mark @POS_9_0_MARK_0 <anchor 293 -40> mark @POS_9_0_MARK_1;
-	pos base uni0713 <anchor 327 -72> mark @POS_9_0_MARK_0 <anchor 466 -116> mark @POS_9_0_MARK_1;
-	pos base uni0713.fina <anchor 302 -73> mark @POS_9_0_MARK_0 <anchor 441 -116> mark @POS_9_0_MARK_1;
-	pos base uni0713.medi <anchor 124 -79> mark @POS_9_0_MARK_0 <anchor 254 -115> mark @POS_9_0_MARK_1;
-	pos base uni0713.init <anchor 173 -105> mark @POS_9_0_MARK_0 <anchor 255 -116> mark @POS_9_0_MARK_1;
-	pos base uni0714 <anchor 328 -73> mark @POS_9_0_MARK_0;
-	pos base uni0714.fina <anchor 300 -73> mark @POS_9_0_MARK_0 <anchor 441 -116> mark @POS_9_0_MARK_1;
-	pos base uni0714.medi <anchor 124 -78> mark @POS_9_0_MARK_0 <anchor 254 -115> mark @POS_9_0_MARK_1;
-	pos base uni0714.init <anchor 125 -78> mark @POS_9_0_MARK_0;
-	pos base uni0715 <anchor 127 -36> mark @POS_9_0_MARK_0 <anchor 247 -53> mark @POS_9_0_MARK_1;
-	pos base uni0715.fina <anchor 99 -36> mark @POS_9_0_MARK_0 <anchor 219 -53> mark @POS_9_0_MARK_1;
-	pos base uni0716 <anchor 127 -36> mark @POS_9_0_MARK_0 <anchor 247 -53> mark @POS_9_0_MARK_1;
-	pos base uni0716.fina <anchor 99 -36> mark @POS_9_0_MARK_0 <anchor 219 -53> mark @POS_9_0_MARK_1;
-	pos base uni0717 <anchor 263 -48> mark @POS_9_0_MARK_0;
-	pos base uni0717.fina <anchor 237 -48> mark @POS_9_0_MARK_0;
-	pos base uni0718 <anchor 184 -49> mark @POS_9_0_MARK_0;
-	pos base uni0718.fina <anchor 158 -49> mark @POS_9_0_MARK_0;
-	pos base uni0719 <anchor 102 -69> mark @POS_9_0_MARK_0;
-	pos base uni0719.fina <anchor 76 -68> mark @POS_9_0_MARK_0;
-	pos base uni071A <anchor 266 -49> mark @POS_9_0_MARK_0;
-	pos base uni071A.fina <anchor 382 -97> mark @POS_9_0_MARK_0;
-	pos base uni071A.medi <anchor 151 -49> mark @POS_9_0_MARK_0;
-	pos base uni071A.init <anchor 152 -49> mark @POS_9_0_MARK_0;
-	pos base uni071B <anchor 308 -209> mark @POS_9_0_MARK_0;
-	pos base uni071B.fina <anchor 282 -209> mark @POS_9_0_MARK_0;
-	pos base uni071B.medi <anchor 132 -209> mark @POS_9_0_MARK_0;
-	pos base uni071B.init <anchor 132 -209> mark @POS_9_0_MARK_0;
-	pos base uni071C <anchor 307 -209> mark @POS_9_0_MARK_0;
-	pos base uni071C.fina <anchor 282 -209> mark @POS_9_0_MARK_0;
-	pos base uni071C.medi <anchor 132 -209> mark @POS_9_0_MARK_0;
-	pos base uni071C.init <anchor 132 -209> mark @POS_9_0_MARK_0;
-	pos base uni071D <anchor 86 -113> mark @POS_9_0_MARK_0;
-	pos base uni071D.fina <anchor 60 -113> mark @POS_9_0_MARK_0;
-	pos base uni071D.medi <anchor 76 -49> mark @POS_9_0_MARK_0;
-	pos base uni071D.init <anchor 68 -48> mark @POS_9_0_MARK_0;
-	pos base uni071F <anchor 194 -58> mark @POS_9_0_MARK_0 <anchor 359 -78> mark @POS_9_0_MARK_1;
-	pos base uni071F.fina <anchor 169 -58> mark @POS_9_0_MARK_0 <anchor 334 -80> mark @POS_9_0_MARK_1;
-	pos base uni071F.medi <anchor 143 -49> mark @POS_9_0_MARK_0 <anchor 273 -46> mark @POS_9_0_MARK_1;
-	pos base uni071F.init <anchor 143 -49> mark @POS_9_0_MARK_0 <anchor 273 -46> mark @POS_9_0_MARK_1;
-	pos base uni0720 <anchor 159 -49> mark @POS_9_0_MARK_0;
-	pos base uni0720.fina <anchor 159 -49> mark @POS_9_0_MARK_0;
-	pos base uni0720.medi <anchor 97 -49> mark @POS_9_0_MARK_0;
-	pos base uni0720.init <anchor 85 -49> mark @POS_9_0_MARK_0;
-	pos base uni0721 <anchor 329 -49> mark @POS_9_0_MARK_0;
-	pos base uni0721.fina <anchor 303 -49> mark @POS_9_0_MARK_0;
-	pos base uni0721.medi <anchor 233 -48> mark @POS_9_0_MARK_0;
-	pos base uni0721.init <anchor 233 -48> mark @POS_9_0_MARK_0;
-	pos base uni0722 <anchor 101 -80> mark @POS_9_0_MARK_0;
-	pos base uni0722.fina <anchor 62 -195> mark @POS_9_0_MARK_0;
-	pos base uni0722.medi <anchor 75 -48> mark @POS_9_0_MARK_0;
-	pos base uni0722.init <anchor 66 -48> mark @POS_9_0_MARK_0;
-	pos base uni0723 <anchor 255 -49> mark @POS_9_0_MARK_0;
-	pos base uni0723.fina <anchor 226 -49> mark @POS_9_0_MARK_0;
-	pos base uni0723.medi <anchor 229 -49> mark @POS_9_0_MARK_0;
-	pos base uni0723.init <anchor 229 -49> mark @POS_9_0_MARK_0;
-	pos base uni0724 <anchor 253 -48> mark @POS_9_0_MARK_0;
-	pos base uni0724.fina <anchor 227 -48> mark @POS_9_0_MARK_0;
-	pos base uni0724.medi <anchor 350 -105> mark @POS_9_0_MARK_0;
-	pos base uni0724.init <anchor 229 -49> mark @POS_9_0_MARK_0;
-	pos base uni0725 <anchor 252 -49> mark @POS_9_0_MARK_0;
-	pos base uni0725.fina <anchor 226 -49> mark @POS_9_0_MARK_0;
-	pos base uni0725.medi <anchor 136 -49> mark @POS_9_0_MARK_0;
-	pos base uni0725.init <anchor 136 -49> mark @POS_9_0_MARK_0;
-	pos base uni0726 <anchor 234 -48> mark @POS_9_0_MARK_0 <anchor 394 -47> mark @POS_9_0_MARK_1;
-	pos base uni0726.fina <anchor 208 -48> mark @POS_9_0_MARK_0 <anchor 368 -40> mark @POS_9_0_MARK_1;
-	pos base uni0726.medi <anchor 133 -48> mark @POS_9_0_MARK_0 <anchor 255 -41> mark @POS_9_0_MARK_1;
-	pos base uni0726.init <anchor 133 -49> mark @POS_9_0_MARK_0 <anchor 256 -47> mark @POS_9_0_MARK_1;
-	pos base uni0727 <anchor 240 -49> mark @POS_9_0_MARK_0;
-	pos base uni0727.fina <anchor 266 -49> mark @POS_9_0_MARK_0;
-	pos base uni0727.medi <anchor 156 -48> mark @POS_9_0_MARK_0;
-	pos base uni0727.init <anchor 155 -47> mark @POS_9_0_MARK_0;
-	pos base uni0728 <anchor 148 -227> mark @POS_9_0_MARK_0;
-	pos base uni0728.fina <anchor 149 -227> mark @POS_9_0_MARK_0;
-	pos base uni0729 <anchor 292 -49> mark @POS_9_0_MARK_0;
-	pos base uni0729.fina <anchor 267 -49> mark @POS_9_0_MARK_0;
-	pos base uni0729.medi <anchor 182 -49> mark @POS_9_0_MARK_0;
-	pos base uni0729.init <anchor 182 -49> mark @POS_9_0_MARK_0;
-	pos base uni072A <anchor 127 -36> mark @POS_9_0_MARK_0;
-	pos base uni072A.fina <anchor 99 -36> mark @POS_9_0_MARK_0;
-	pos base uni072B <anchor 263 -49> mark @POS_9_0_MARK_0;
-	pos base uni072B.fina <anchor 237 -49> mark @POS_9_0_MARK_0;
-	pos base uni072B.medi <anchor 134 -49> mark @POS_9_0_MARK_0;
-	pos base uni072B.init <anchor 134 -49> mark @POS_9_0_MARK_0;
-	pos base uni072C <anchor 212 -61> mark @POS_9_0_MARK_0 <anchor 350 -53> mark @POS_9_0_MARK_1;
-	pos base uni072C.fina <anchor 187 -60> mark @POS_9_0_MARK_0 <anchor 324 -53> mark @POS_9_0_MARK_1;
-} POS_9;
-lookup POS_10 {
-	markClass uni0711 <anchor 0 443> @POS_10_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_10_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_10_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_10_0_MARK_0;
-	pos base uni072A0308.isol <anchor 102 -36> mark @POS_10_0_MARK_0;
-	pos base uni072A0308.fina <anchor 98 -36> mark @POS_10_0_MARK_0;
-} POS_10;
-lookup POS_11 {
-	markClass uni0711 <anchor 0 443> @POS_11_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_11_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_11_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_11_0_MARK_0;
-	pos base uni25CC <anchor 153 0> mark @POS_11_0_MARK_0;
-} POS_11;
-lookup POS_12 {
-	markClass uni0711 <anchor 0 443> @POS_12_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_12_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_12_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_12_0_MARK_0;
-	pos base uni0640 <anchor 93 -49> mark @POS_12_0_MARK_0;
-} POS_12;
-lookup POS_13 {
-	markClass uni0711 <anchor 0 443> @POS_13_0_MARK_0;
-	markClass uni0730 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0731 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0733 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0735 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0736 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni073A <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni073D <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni073F <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0740 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0741 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0743 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0745 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0747 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0749 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni074A <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0303 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0304 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0307 <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0732.above <anchor 0 271> @POS_13_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_13_0_MARK_0;
-	markClass uni0742 <anchor 0 0> @POS_13_0_MARK_1;
-	markClass uni0325 <anchor 0 0> @POS_13_0_MARK_1;
-	pos base uni0710 <anchor 215 -24> mark @POS_13_0_MARK_0;
-#	pos base uni0710.fin3 <anchor 215 -24> mark @POS_13_0_MARK_0;
-#	pos base uni0710.fin2 <anchor 215 -24> mark @POS_13_0_MARK_0;
-	pos base uni0710.fina <anchor 215 -24> mark @POS_13_0_MARK_0;
-	pos base uni0710.med2 <anchor 374 -90> mark @POS_13_0_MARK_0;
-	pos base uni0712.fina <anchor 230 -48> mark @POS_13_0_MARK_0 <anchor 407 -41> mark @POS_13_0_MARK_1;
-	pos base uni0712.medi <anchor 148 -49> mark @POS_13_0_MARK_0 <anchor 293 -40> mark @POS_13_0_MARK_1;
-	pos base uni0712.init <anchor 278 -75> mark @POS_13_0_MARK_0 <anchor 293 -40> mark @POS_13_0_MARK_1;
-	pos base uni0713 <anchor 327 -72> mark @POS_13_0_MARK_0 <anchor 466 -116> mark @POS_13_0_MARK_1;
-	pos base uni0713.fina <anchor 302 -73> mark @POS_13_0_MARK_0 <anchor 441 -116> mark @POS_13_0_MARK_1;
-	pos base uni0713.medi <anchor 124 -79> mark @POS_13_0_MARK_0 <anchor 254 -115> mark @POS_13_0_MARK_1;
-	pos base uni0713.init <anchor 173 -105> mark @POS_13_0_MARK_0 <anchor 255 -116> mark @POS_13_0_MARK_1;
-	pos base uni0714 <anchor 328 -73> mark @POS_13_0_MARK_0;
-	pos base uni0714.fina <anchor 300 -73> mark @POS_13_0_MARK_0 <anchor 441 -116> mark @POS_13_0_MARK_1;
-	pos base uni0714.medi <anchor 124 -78> mark @POS_13_0_MARK_0 <anchor 254 -115> mark @POS_13_0_MARK_1;
-	pos base uni0714.init <anchor 125 -78> mark @POS_13_0_MARK_0;
-	pos base uni0715 <anchor 127 -36> mark @POS_13_0_MARK_0 <anchor 247 -53> mark @POS_13_0_MARK_1;
-	pos base uni0715.fina <anchor 99 -36> mark @POS_13_0_MARK_0 <anchor 219 -53> mark @POS_13_0_MARK_1;
-	pos base uni0716 <anchor 127 -36> mark @POS_13_0_MARK_0 <anchor 247 -53> mark @POS_13_0_MARK_1;
-	pos base uni0716.fina <anchor 99 -36> mark @POS_13_0_MARK_0 <anchor 219 -53> mark @POS_13_0_MARK_1;
-	pos base uni0717 <anchor 263 -48> mark @POS_13_0_MARK_0;
-	pos base uni0717.fina <anchor 237 -48> mark @POS_13_0_MARK_0;
-	pos base uni0718 <anchor 184 -49> mark @POS_13_0_MARK_0;
-	pos base uni0718.fina <anchor 158 -49> mark @POS_13_0_MARK_0;
-	pos base uni0719 <anchor 102 -69> mark @POS_13_0_MARK_0;
-	pos base uni0719.fina <anchor 76 -68> mark @POS_13_0_MARK_0;
-	pos base uni071A <anchor 266 -49> mark @POS_13_0_MARK_0;
-	pos base uni071A.fina <anchor 382 -97> mark @POS_13_0_MARK_0;
-	pos base uni071A.medi <anchor 151 -49> mark @POS_13_0_MARK_0;
-	pos base uni071A.init <anchor 152 -49> mark @POS_13_0_MARK_0;
-	pos base uni071B <anchor 308 -209> mark @POS_13_0_MARK_0;
-	pos base uni071B.fina <anchor 282 -209> mark @POS_13_0_MARK_0;
-	pos base uni071B.medi <anchor 132 -209> mark @POS_13_0_MARK_0;
-	pos base uni071B.init <anchor 132 -209> mark @POS_13_0_MARK_0;
-	pos base uni071C <anchor 307 -209> mark @POS_13_0_MARK_0;
-	pos base uni071C.fina <anchor 282 -209> mark @POS_13_0_MARK_0;
-	pos base uni071C.medi <anchor 132 -209> mark @POS_13_0_MARK_0;
-	pos base uni071C.init <anchor 132 -209> mark @POS_13_0_MARK_0;
-	pos base uni071D <anchor 86 -113> mark @POS_13_0_MARK_0;
-	pos base uni071D.fina <anchor 60 -113> mark @POS_13_0_MARK_0;
-	pos base uni071D.medi <anchor 76 -49> mark @POS_13_0_MARK_0;
-	pos base uni071D.init <anchor 68 -48> mark @POS_13_0_MARK_0;
-	pos base uni071F <anchor 194 -58> mark @POS_13_0_MARK_0 <anchor 359 -78> mark @POS_13_0_MARK_1;
-	pos base uni071F.fina <anchor 169 -58> mark @POS_13_0_MARK_0 <anchor 334 -80> mark @POS_13_0_MARK_1;
-	pos base uni071F.medi <anchor 143 -49> mark @POS_13_0_MARK_0 <anchor 273 -46> mark @POS_13_0_MARK_1;
-	pos base uni071F.init <anchor 143 -49> mark @POS_13_0_MARK_0 <anchor 273 -46> mark @POS_13_0_MARK_1;
-	pos base uni0720 <anchor 159 -49> mark @POS_13_0_MARK_0;
-	pos base uni0720.fina <anchor 159 -49> mark @POS_13_0_MARK_0;
-	pos base uni0720.medi <anchor 97 -49> mark @POS_13_0_MARK_0;
-	pos base uni0720.init <anchor 85 -49> mark @POS_13_0_MARK_0;
-	pos base uni0721 <anchor 329 -49> mark @POS_13_0_MARK_0;
-	pos base uni0721.fina <anchor 303 -49> mark @POS_13_0_MARK_0;
-	pos base uni0721.medi <anchor 233 -48> mark @POS_13_0_MARK_0;
-	pos base uni0721.init <anchor 233 -48> mark @POS_13_0_MARK_0;
-	pos base uni0722 <anchor 101 -80> mark @POS_13_0_MARK_0;
-	pos base uni0722.fina <anchor 62 -195> mark @POS_13_0_MARK_0;
-	pos base uni0722.medi <anchor 75 -48> mark @POS_13_0_MARK_0;
-	pos base uni0722.init <anchor 66 -48> mark @POS_13_0_MARK_0;
-	pos base uni0723 <anchor 255 -49> mark @POS_13_0_MARK_0;
-	pos base uni0723.fina <anchor 226 -49> mark @POS_13_0_MARK_0;
-	pos base uni0723.medi <anchor 229 -49> mark @POS_13_0_MARK_0;
-	pos base uni0723.init <anchor 229 -49> mark @POS_13_0_MARK_0;
-	pos base uni0724 <anchor 253 -48> mark @POS_13_0_MARK_0;
-	pos base uni0724.fina <anchor 227 -48> mark @POS_13_0_MARK_0;
-	pos base uni0724.medi <anchor 350 -105> mark @POS_13_0_MARK_0;
-	pos base uni0724.init <anchor 229 -49> mark @POS_13_0_MARK_0;
-	pos base uni0725 <anchor 252 -49> mark @POS_13_0_MARK_0;
-	pos base uni0725.fina <anchor 226 -49> mark @POS_13_0_MARK_0;
-	pos base uni0725.medi <anchor 136 -49> mark @POS_13_0_MARK_0;
-	pos base uni0725.init <anchor 136 -49> mark @POS_13_0_MARK_0;
-	pos base uni0726 <anchor 234 -48> mark @POS_13_0_MARK_0 <anchor 394 -47> mark @POS_13_0_MARK_1;
-	pos base uni0726.fina <anchor 208 -48> mark @POS_13_0_MARK_0 <anchor 368 -40> mark @POS_13_0_MARK_1;
-	pos base uni0726.medi <anchor 133 -48> mark @POS_13_0_MARK_0 <anchor 255 -41> mark @POS_13_0_MARK_1;
-	pos base uni0726.init <anchor 133 -49> mark @POS_13_0_MARK_0 <anchor 256 -47> mark @POS_13_0_MARK_1;
-	pos base uni0727 <anchor 240 -49> mark @POS_13_0_MARK_0;
-	pos base uni0727.fina <anchor 266 -49> mark @POS_13_0_MARK_0;
-	pos base uni0727.medi <anchor 156 -48> mark @POS_13_0_MARK_0;
-	pos base uni0727.init <anchor 155 -47> mark @POS_13_0_MARK_0;
-	pos base uni0728 <anchor 148 -227> mark @POS_13_0_MARK_0;
-	pos base uni0728.fina <anchor 149 -227> mark @POS_13_0_MARK_0;
-	pos base uni0729 <anchor 292 -49> mark @POS_13_0_MARK_0;
-	pos base uni0729.fina <anchor 267 -49> mark @POS_13_0_MARK_0;
-	pos base uni0729.medi <anchor 182 -49> mark @POS_13_0_MARK_0;
-	pos base uni0729.init <anchor 182 -49> mark @POS_13_0_MARK_0;
-	pos base uni072A <anchor 127 -36> mark @POS_13_0_MARK_0;
-	pos base uni072A.fina <anchor 99 -36> mark @POS_13_0_MARK_0;
-	pos base uni072B <anchor 263 -49> mark @POS_13_0_MARK_0;
-	pos base uni072B.fina <anchor 237 -49> mark @POS_13_0_MARK_0;
-	pos base uni072B.medi <anchor 134 -49> mark @POS_13_0_MARK_0;
-	pos base uni072B.init <anchor 134 -49> mark @POS_13_0_MARK_0;
-	pos base uni072C <anchor 212 -61> mark @POS_13_0_MARK_0 <anchor 350 -53> mark @POS_13_0_MARK_1;
-	pos base uni072C.fina <anchor 187 -60> mark @POS_13_0_MARK_0 <anchor 324 -53> mark @POS_13_0_MARK_1;
-} POS_13;
-lookup POS_14 {
-	markClass uni0731 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_14_0_MARK_0;
-	markClass uni0711 <anchor 0 443> @POS_14_0_MARK_1;
-	markClass uni0730 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0733 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0735 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0736 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni073A <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni073D <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni073F <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0740 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0743 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0745 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0747 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0749 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni074A <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0303 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0304 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0307 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0308 <anchor 0 271> @POS_14_0_MARK_1;
-	markClass uni0732.above <anchor 0 271> @POS_14_0_MARK_1;
-	pos base uni072A0308.isol <anchor 102 -36> mark @POS_14_0_MARK_0 <anchor 99 341> mark @POS_14_0_MARK_1;
-	pos base uni072A0308.fina <anchor 98 -36> mark @POS_14_0_MARK_0 <anchor 96 341> mark @POS_14_0_MARK_1;
-} POS_14;
-lookup POS_15 {
-	markClass uni0731 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_15_0_MARK_0;
-	markClass uni0711 <anchor 0 443> @POS_15_0_MARK_1;
-	markClass uni0730 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0733 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0735 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0736 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni073A <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni073D <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni073F <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0740 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0743 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0745 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0747 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0749 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni074A <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0303 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0304 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0307 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0308 <anchor 0 271> @POS_15_0_MARK_1;
-	markClass uni0732.above <anchor 0 271> @POS_15_0_MARK_1;
-	pos base uni25CC <anchor 153 0> mark @POS_15_0_MARK_0 <anchor 150 285> mark @POS_15_0_MARK_1;
-} POS_15;
-lookup POS_16 {
-	markClass uni0731 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_16_0_MARK_0;
-	markClass uni0711 <anchor 0 443> @POS_16_0_MARK_1;
-	markClass uni0730 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0733 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0735 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0736 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni073A <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni073D <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni073F <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0740 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0743 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0745 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0747 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0749 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni074A <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0303 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0304 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0307 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0308 <anchor 0 271> @POS_16_0_MARK_1;
-	markClass uni0732.above <anchor 0 271> @POS_16_0_MARK_1;
-	pos base uni0640 <anchor 93 -49> mark @POS_16_0_MARK_0 <anchor 95 152> mark @POS_16_0_MARK_1;
-} POS_16;
-lookup POS_17 {
-	markClass uni0731 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0734 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0737 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0738 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0739 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni073B <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni073C <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni073E <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0744 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0746 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0748 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0320 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0323 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0324 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni032D <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni032E <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0330 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0331 <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0732.below <anchor 0 0> @POS_17_0_MARK_0;
-	markClass uni0711 <anchor 0 443> @POS_17_0_MARK_1;
-	markClass uni0730 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0733 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0735 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0736 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni073A <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni073D <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni073F <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0740 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0743 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0745 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0747 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0749 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni074A <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0303 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0304 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0307 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0308 <anchor 0 271> @POS_17_0_MARK_1;
-	markClass uni0732.above <anchor 0 271> @POS_17_0_MARK_1;
-	pos base uni0710 <anchor 215 -24> mark @POS_17_0_MARK_0 <anchor 196 246> mark @POS_17_0_MARK_1;
-	pos base uni0710.fina <anchor 215 -24> mark @POS_17_0_MARK_0 <anchor 196 246> mark @POS_17_0_MARK_1;
-	pos base uni0712.fina <anchor 230 -48> mark @POS_17_0_MARK_0 <anchor 285 260> mark @POS_17_0_MARK_1;
-	pos base uni0712.medi <anchor 148 -49> mark @POS_17_0_MARK_0 <anchor 171 260> mark @POS_17_0_MARK_1;
-	pos base uni0712.init <anchor 278 -75> mark @POS_17_0_MARK_0 <anchor 285 413> mark @POS_17_0_MARK_1;
-	pos base uni0713 <anchor 327 -72> mark @POS_17_0_MARK_0 <anchor 347 293> mark @POS_17_0_MARK_1;
-	pos base uni0713.fina <anchor 302 -73> mark @POS_17_0_MARK_0 <anchor 322 293> mark @POS_17_0_MARK_1;
-	pos base uni0713.medi <anchor 124 -79> mark @POS_17_0_MARK_0 <anchor 136 293> mark @POS_17_0_MARK_1;
-	pos base uni0713.init <anchor 173 -105> mark @POS_17_0_MARK_0 <anchor 181 495> mark @POS_17_0_MARK_1;
-	pos base uni0714 <anchor 328 -73> mark @POS_17_0_MARK_0 <anchor 347 293> mark @POS_17_0_MARK_1;
-	pos base uni0714.fina <anchor 300 -73> mark @POS_17_0_MARK_0 <anchor 323 293> mark @POS_17_0_MARK_1;
-	pos base uni0714.medi <anchor 124 -78> mark @POS_17_0_MARK_0 <anchor 136 293> mark @POS_17_0_MARK_1;
-	pos base uni0714.init <anchor 125 -78> mark @POS_17_0_MARK_0 <anchor 136 293> mark @POS_17_0_MARK_1;
-	pos base uni0715 <anchor 127 -36> mark @POS_17_0_MARK_0 <anchor 126 263> mark @POS_17_0_MARK_1;
-	pos base uni0715.fina <anchor 99 -36> mark @POS_17_0_MARK_0 <anchor 101 263> mark @POS_17_0_MARK_1;
-	pos base uni0716 <anchor 127 -36> mark @POS_17_0_MARK_0 <anchor 126 262> mark @POS_17_0_MARK_1;
-	pos base uni0716.fina <anchor 99 -36> mark @POS_17_0_MARK_0 <anchor 101 262> mark @POS_17_0_MARK_1;
-	pos base uni0717 <anchor 263 -48> mark @POS_17_0_MARK_0 <anchor 258 270> mark @POS_17_0_MARK_1;
-	pos base uni0717.fina <anchor 237 -48> mark @POS_17_0_MARK_0 <anchor 233 270> mark @POS_17_0_MARK_1;
-	pos base uni0718 <anchor 184 -49> mark @POS_17_0_MARK_0 <anchor 165 269> mark @POS_17_0_MARK_1;
-	pos base uni0718.fina <anchor 158 -49> mark @POS_17_0_MARK_0 <anchor 139 269> mark @POS_17_0_MARK_1;
-	pos base uni0719 <anchor 102 -69> mark @POS_17_0_MARK_0 <anchor 70 269> mark @POS_17_0_MARK_1;
-	pos base uni0719.fina <anchor 76 -68> mark @POS_17_0_MARK_0 <anchor 44 269> mark @POS_17_0_MARK_1;
-	pos base uni071A <anchor 266 -49> mark @POS_17_0_MARK_0 <anchor 242 229> mark @POS_17_0_MARK_1;
-	pos base uni071A.fina <anchor 382 -97> mark @POS_17_0_MARK_0 <anchor 300 323> mark @POS_17_0_MARK_1;
-	pos base uni071A.medi <anchor 151 -49> mark @POS_17_0_MARK_0 <anchor 121 229> mark @POS_17_0_MARK_1;
-	pos base uni071A.init <anchor 152 -49> mark @POS_17_0_MARK_0 <anchor 121 230> mark @POS_17_0_MARK_1;
-	pos base uni071B <anchor 308 -209> mark @POS_17_0_MARK_0 <anchor 288 377> mark @POS_17_0_MARK_1;
-	pos base uni071B.fina <anchor 282 -209> mark @POS_17_0_MARK_0 <anchor 263 375> mark @POS_17_0_MARK_1;
-	pos base uni071B.medi <anchor 132 -209> mark @POS_17_0_MARK_0 <anchor 112 375> mark @POS_17_0_MARK_1;
-	pos base uni071B.init <anchor 132 -209> mark @POS_17_0_MARK_0 <anchor 112 375> mark @POS_17_0_MARK_1;
-	pos base uni071C <anchor 307 -209> mark @POS_17_0_MARK_0 <anchor 287 375> mark @POS_17_0_MARK_1;
-	pos base uni071C.fina <anchor 282 -209> mark @POS_17_0_MARK_0 <anchor 263 375> mark @POS_17_0_MARK_1;
-	pos base uni071C.medi <anchor 132 -209> mark @POS_17_0_MARK_0 <anchor 112 375> mark @POS_17_0_MARK_1;
-	pos base uni071C.init <anchor 132 -209> mark @POS_17_0_MARK_0 <anchor 112 375> mark @POS_17_0_MARK_1;
-	pos base uni071D <anchor 86 -113> mark @POS_17_0_MARK_0 <anchor 68 173> mark @POS_17_0_MARK_1;
-	pos base uni071D.fina <anchor 60 -113> mark @POS_17_0_MARK_0 <anchor 43 173> mark @POS_17_0_MARK_1;
-	pos base uni071D.medi <anchor 76 -49> mark @POS_17_0_MARK_0 <anchor 69 210> mark @POS_17_0_MARK_1;
-	pos base uni071D.init <anchor 68 -48> mark @POS_17_0_MARK_0 <anchor 63 204> mark @POS_17_0_MARK_1;
-	pos base uni071F <anchor 194 -58> mark @POS_17_0_MARK_0 <anchor 188 226> mark @POS_17_0_MARK_1;
-	pos base uni071F.fina <anchor 169 -58> mark @POS_17_0_MARK_0 <anchor 163 226> mark @POS_17_0_MARK_1;
-	pos base uni071F.medi <anchor 143 -49> mark @POS_17_0_MARK_0 <anchor 126 261> mark @POS_17_0_MARK_1;
-	pos base uni071F.init <anchor 143 -49> mark @POS_17_0_MARK_0 <anchor 126 261> mark @POS_17_0_MARK_1;
-	pos base uni0720 <anchor 159 -49> mark @POS_17_0_MARK_0 <anchor 139 406> mark @POS_17_0_MARK_1;
-	pos base uni0720.fina <anchor 159 -49> mark @POS_17_0_MARK_0 <anchor 139 406> mark @POS_17_0_MARK_1;
-	pos base uni0720.medi <anchor 97 -49> mark @POS_17_0_MARK_0 <anchor -15 406> mark @POS_17_0_MARK_1;
-	pos base uni0720.init <anchor 85 -49> mark @POS_17_0_MARK_0 <anchor -14 406> mark @POS_17_0_MARK_1;
-	pos base uni0721 <anchor 329 -49> mark @POS_17_0_MARK_0 <anchor 267 269> mark @POS_17_0_MARK_1;
-	pos base uni0721.fina <anchor 303 -49> mark @POS_17_0_MARK_0 <anchor 242 269> mark @POS_17_0_MARK_1;
-	pos base uni0721.medi <anchor 233 -48> mark @POS_17_0_MARK_0 <anchor 241 263> mark @POS_17_0_MARK_1;
-	pos base uni0721.init <anchor 233 -48> mark @POS_17_0_MARK_0 <anchor 242 263> mark @POS_17_0_MARK_1;
-	pos base uni0722 <anchor 101 -80> mark @POS_17_0_MARK_0 <anchor 124 151> mark @POS_17_0_MARK_1;
-	pos base uni0722.fina <anchor 62 -195> mark @POS_17_0_MARK_0 <anchor 55 143> mark @POS_17_0_MARK_1;
-	pos base uni0722.medi <anchor 75 -48> mark @POS_17_0_MARK_0 <anchor 58 269> mark @POS_17_0_MARK_1;
-	pos base uni0722.init <anchor 66 -48> mark @POS_17_0_MARK_0 <anchor 59 269> mark @POS_17_0_MARK_1;
-	pos base uni0723 <anchor 255 -49> mark @POS_17_0_MARK_0 <anchor 255 246> mark @POS_17_0_MARK_1;
-	pos base uni0723.fina <anchor 226 -49> mark @POS_17_0_MARK_0 <anchor 229 246> mark @POS_17_0_MARK_1;
-	pos base uni0723.medi <anchor 229 -49> mark @POS_17_0_MARK_0 <anchor 229 246> mark @POS_17_0_MARK_1;
-	pos base uni0723.init <anchor 229 -49> mark @POS_17_0_MARK_0 <anchor 229 246> mark @POS_17_0_MARK_1;
-	pos base uni0724 <anchor 253 -48> mark @POS_17_0_MARK_0 <anchor 255 246> mark @POS_17_0_MARK_1;
-	pos base uni0724.fina <anchor 227 -48> mark @POS_17_0_MARK_0 <anchor 228 246> mark @POS_17_0_MARK_1;
-	pos base uni0724.medi <anchor 350 -105> mark @POS_17_0_MARK_0 <anchor 350 435> mark @POS_17_0_MARK_1;
-	pos base uni0724.init <anchor 229 -49> mark @POS_17_0_MARK_0 <anchor 229 246> mark @POS_17_0_MARK_1;
-	pos base uni0725 <anchor 252 -49> mark @POS_17_0_MARK_0 <anchor 257 244> mark @POS_17_0_MARK_1;
-	pos base uni0725.fina <anchor 226 -49> mark @POS_17_0_MARK_0 <anchor 231 244> mark @POS_17_0_MARK_1;
-	pos base uni0725.medi <anchor 136 -49> mark @POS_17_0_MARK_0 <anchor 110 244> mark @POS_17_0_MARK_1;
-	pos base uni0725.init <anchor 136 -49> mark @POS_17_0_MARK_0 <anchor 111 244> mark @POS_17_0_MARK_1;
-	pos base uni0726 <anchor 234 -48> mark @POS_17_0_MARK_0 <anchor 257 317> mark @POS_17_0_MARK_1;
-	pos base uni0726.fina <anchor 208 -48> mark @POS_17_0_MARK_0 <anchor 231 317> mark @POS_17_0_MARK_1;
-	pos base uni0726.medi <anchor 133 -48> mark @POS_17_0_MARK_0 <anchor 118 317> mark @POS_17_0_MARK_1;
-	pos base uni0726.init <anchor 133 -49> mark @POS_17_0_MARK_0 <anchor 117 317> mark @POS_17_0_MARK_1;
-	pos base uni0727 <anchor 240 -49> mark @POS_17_0_MARK_0 <anchor 260 367> mark @POS_17_0_MARK_1;
-	pos base uni0727.fina <anchor 266 -49> mark @POS_17_0_MARK_0 <anchor 285 367> mark @POS_17_0_MARK_1;
-	pos base uni0727.medi <anchor 156 -48> mark @POS_17_0_MARK_0 <anchor 151 367> mark @POS_17_0_MARK_1;
-	pos base uni0727.init <anchor 155 -47> mark @POS_17_0_MARK_0 <anchor 151 367> mark @POS_17_0_MARK_1;
-	pos base uni0728 <anchor 148 -227> mark @POS_17_0_MARK_0 <anchor 163 136> mark @POS_17_0_MARK_1;
-	pos base uni0728.fina <anchor 149 -227> mark @POS_17_0_MARK_0 <anchor 163 137> mark @POS_17_0_MARK_1;
-	pos base uni0729 <anchor 292 -49> mark @POS_17_0_MARK_0 <anchor 279 262> mark @POS_17_0_MARK_1;
-	pos base uni0729.fina <anchor 267 -49> mark @POS_17_0_MARK_0 <anchor 254 262> mark @POS_17_0_MARK_1;
-	pos base uni0729.medi <anchor 182 -49> mark @POS_17_0_MARK_0 <anchor 169 262> mark @POS_17_0_MARK_1;
-	pos base uni0729.init <anchor 182 -49> mark @POS_17_0_MARK_0 <anchor 169 262> mark @POS_17_0_MARK_1;
-	pos base uni072A <anchor 127 -36> mark @POS_17_0_MARK_0 <anchor 133 341> mark @POS_17_0_MARK_1;
-	pos base uni072A.fina <anchor 99 -36> mark @POS_17_0_MARK_0 <anchor 107 342> mark @POS_17_0_MARK_1;
-	pos base uni072B <anchor 263 -49> mark @POS_17_0_MARK_0 <anchor 264 269> mark @POS_17_0_MARK_1;
-	pos base uni072B.fina <anchor 237 -49> mark @POS_17_0_MARK_0 <anchor 240 269> mark @POS_17_0_MARK_1;
-	pos base uni072B.medi <anchor 134 -49> mark @POS_17_0_MARK_0 <anchor 136 269> mark @POS_17_0_MARK_1;
-	pos base uni072B.init <anchor 134 -49> mark @POS_17_0_MARK_0 <anchor 137 269> mark @POS_17_0_MARK_1;
-	pos base uni072C <anchor 212 -61> mark @POS_17_0_MARK_0 <anchor 224 362> mark @POS_17_0_MARK_1;
-	pos base uni072C.fina <anchor 187 -60> mark @POS_17_0_MARK_0 <anchor 199 362> mark @POS_17_0_MARK_1;
-} POS_17;
-lookup POS_18 {
-	markClass uni0742 <anchor 0 0> @POS_18_0_MARK_0;
-	markClass uni0325 <anchor 0 0> @POS_18_0_MARK_0;
-	pos base uni0712.fina <anchor 407 -41> mark @POS_18_0_MARK_0;
-	pos base uni0712.medi <anchor 293 -40> mark @POS_18_0_MARK_0;
-	pos base uni0712.init <anchor 293 -40> mark @POS_18_0_MARK_0;
-	pos base uni0713 <anchor 466 -116> mark @POS_18_0_MARK_0;
-	pos base uni0713.fina <anchor 441 -116> mark @POS_18_0_MARK_0;
-	pos base uni0713.medi <anchor 254 -115> mark @POS_18_0_MARK_0;
-	pos base uni0713.init <anchor 255 -116> mark @POS_18_0_MARK_0;
-	pos base uni0714.fina <anchor 441 -116> mark @POS_18_0_MARK_0;
-	pos base uni0714.medi <anchor 254 -115> mark @POS_18_0_MARK_0;
-	pos base uni0715 <anchor 247 -53> mark @POS_18_0_MARK_0;
-	pos base uni0715.fina <anchor 219 -53> mark @POS_18_0_MARK_0;
-	pos base uni0716 <anchor 247 -53> mark @POS_18_0_MARK_0;
-	pos base uni0716.fina <anchor 219 -53> mark @POS_18_0_MARK_0;
-	pos base uni071F <anchor 359 -78> mark @POS_18_0_MARK_0;
-	pos base uni071F.fina <anchor 334 -80> mark @POS_18_0_MARK_0;
-	pos base uni071F.medi <anchor 273 -46> mark @POS_18_0_MARK_0;
-	pos base uni071F.init <anchor 273 -46> mark @POS_18_0_MARK_0;
-	pos base uni0726 <anchor 394 -47> mark @POS_18_0_MARK_0;
-	pos base uni0726.fina <anchor 368 -40> mark @POS_18_0_MARK_0;
-	pos base uni0726.medi <anchor 255 -41> mark @POS_18_0_MARK_0;
-	pos base uni0726.init <anchor 256 -47> mark @POS_18_0_MARK_0;
-	pos base uni072C <anchor 350 -53> mark @POS_18_0_MARK_0;
-	pos base uni072C.fina <anchor 324 -53> mark @POS_18_0_MARK_0;
-} POS_18;
-lookup POS_19 {
-	markClass uni0741 <anchor 0 271> @POS_19_0_MARK_0;
-	markClass uni030A <anchor 0 271> @POS_19_0_MARK_0;
-	pos base uni0712.fina <anchor 410 250> mark @POS_19_0_MARK_0;
-	pos base uni0712.medi <anchor 296 250> mark @POS_19_0_MARK_0;
-	pos base uni0712.init <anchor 296 250> mark @POS_19_0_MARK_0;
-	pos base uni0713 <anchor 453 130> mark @POS_19_0_MARK_0;
-	pos base uni0713.fina <anchor 428 129> mark @POS_19_0_MARK_0;
-	pos base uni0713.medi <anchor 242 127> mark @POS_19_0_MARK_0;
-	pos base uni0713.init <anchor 242 127> mark @POS_19_0_MARK_0;
-	pos base uni0714.fina <anchor 428 129> mark @POS_19_0_MARK_0;
-	pos base uni0714.medi <anchor 242 127> mark @POS_19_0_MARK_0;
-	pos base uni0715 <anchor 240 246> mark @POS_19_0_MARK_0;
-	pos base uni0715.fina <anchor 215 246> mark @POS_19_0_MARK_0;
-	pos base uni0716 <anchor 240 246> mark @POS_19_0_MARK_0;
-	pos base uni0716.fina <anchor 215 246> mark @POS_19_0_MARK_0;
-	pos base uni071F <anchor 367 215> mark @POS_19_0_MARK_0;
-	pos base uni071F.fina <anchor 341 215> mark @POS_19_0_MARK_0;
-	pos base uni071F.medi <anchor 256 203> mark @POS_19_0_MARK_0;
-	pos base uni071F.init <anchor 256 204> mark @POS_19_0_MARK_0;
-	pos base uni0726 <anchor 376 279> mark @POS_19_0_MARK_0;
-	pos base uni0726.fina <anchor 350 279> mark @POS_19_0_MARK_0;
-	pos base uni0726.medi <anchor 238 279> mark @POS_19_0_MARK_0;
-	pos base uni0726.init <anchor 237 279> mark @POS_19_0_MARK_0;
-	pos base uni072C <anchor 322 235> mark @POS_19_0_MARK_0;
-	pos base uni072C.fina <anchor 296 235> mark @POS_19_0_MARK_0;
-} POS_19;
-script syrc;
-language dflt;
-lookup POS_6;
-lookup POS_7;
-lookup POS_8;
-lookup POS_9;
-lookup POS_10;
-lookup POS_11;
-lookup POS_12;
-lookup POS_13;
-lookup POS_14;
-lookup POS_15;
-lookup POS_16;
-lookup POS_17;
-lookup POS_18;
-lookup POS_19;
-script arab;
-language dflt;
-lookup POS_10;
-lookup POS_11;
-lookup POS_12;
-lookup POS_13;
-";
+automatic = 1;
+code = "";
 tag = mark;
 },
 {
 code = "script syrc;
 language dflt;
 
-lookupflag RightToLeft;
+lookupflag RightToLeft IgnoreMarks;
 # Lammad-Allap
 sub uni0720.medi uni0710.fina by uni07200710.fina;
 sub uni0720.init uni0710.fina by uni07200710.isol;
@@ -1704,24 +943,17 @@ unicode = 8207;
 },
 {
 glyphname = uni0710;
+lastChange = "2024-06-30 05:55:05 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (278,-20);
+},
+{
 name = top;
-pos = (215,-24);
-},
-{
-name = top_;
-pos = (215,-24);
-},
-{
-name = top__;
-pos = (215,-24);
-},
-{
-name = top___;
-pos = (196,246);
+pos = (278,323);
 }
 );
 hints = (
@@ -1771,17 +1003,17 @@ unicode = 1808;
 },
 {
 glyphname = uni0710.fin3;
-lastChange = "2024-06-29 08:11:29 +0000";
+lastChange = "2024-06-30 05:55:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = top;
-pos = (215,-24);
+name = bottom;
+pos = (278,-20);
 },
 {
-name = top_;
-pos = (215,-24);
+name = top;
+pos = (278,323);
 }
 );
 hints = (
@@ -1830,17 +1062,17 @@ note = uni0710.fin3;
 },
 {
 glyphname = uni0710.fin2;
-lastChange = "2024-06-29 05:42:39 +0000";
+lastChange = "2024-06-30 05:54:56 +0000";
 layers = (
 {
 anchors = (
 {
-name = top;
-pos = (215,-24);
+name = bottom;
+pos = (278,-20);
 },
 {
-name = top_;
-pos = (215,-24);
+name = top;
+pos = (278,323);
 }
 );
 hints = (
@@ -1889,25 +1121,17 @@ note = uni0710.fin2;
 },
 {
 glyphname = uni0710.fina;
-lastChange = "2024-06-28 08:13:07 +0000";
+lastChange = "2024-06-30 05:53:57 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (278,-20);
+},
+{
 name = top;
-pos = (215,-24);
-},
-{
-name = top_;
-pos = (215,-24);
-},
-{
-name = top__;
-pos = (215,-24);
-},
-{
-name = top___;
-pos = (196,246);
+pos = (278,323);
 }
 );
 hints = (
@@ -1957,16 +1181,17 @@ note = uni0710.fina;
 },
 {
 glyphname = uni0710.med2;
+lastChange = "2024-06-30 05:53:57 +0000";
 layers = (
 {
 anchors = (
 {
-name = top;
-pos = (374,-90);
+name = bottom;
+pos = (278,-20);
 },
 {
-name = top_;
-pos = (374,-90);
+name = top;
+pos = (278,323);
 }
 );
 hints = (
@@ -2016,12 +1241,13 @@ note = uni0710.med2;
 },
 {
 glyphname = uni0711;
+lastChange = "2024-06-30 05:43:34 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,443);
+pos = (108,485);
 }
 );
 hints = (
@@ -2049,20 +1275,20 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(209,672,l),
-(-58,672,l),
-(-58,505,l),
-(-3,505,l),
-(-3,619,l),
-(50,619,l),
-(49,505,l),
-(104,505,l),
-(104,618,l),
-(209,618,l)
+(268,672,l),
+(1,672,l),
+(1,505,l),
+(56,505,l),
+(56,619,l),
+(109,619,l),
+(108,505,l),
+(163,505,l),
+(163,618,l),
+(268,618,l)
 );
 }
 );
-width = 0;
+width = 59;
 }
 );
 note = uni0711;
@@ -2070,8 +1296,19 @@ unicode = 1809;
 },
 {
 glyphname = uni0712;
+lastChange = "2024-06-30 06:35:50 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (354,-20);
+},
+{
+name = top;
+pos = (354,323);
+}
+);
 hints = (
 {
 horizontal = 1;
@@ -2112,40 +1349,17 @@ unicode = 1810;
 },
 {
 glyphname = uni0712.fina;
+lastChange = "2024-06-30 06:37:03 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (407,-41);
-},
-{
-name = bottom_;
-pos = (407,-41);
-},
-{
-name = bottom__;
-pos = (407,-41);
+pos = (354,-20);
 },
 {
 name = top;
-pos = (230,-48);
-},
-{
-name = top_;
-pos = (230,-48);
-},
-{
-name = top__;
-pos = (230,-48);
-},
-{
-name = top___;
-pos = (285,260);
-},
-{
-name = top____;
-pos = (410,250);
+pos = (354,323);
 }
 );
 hints = (
@@ -2189,40 +1403,17 @@ note = uni0712.fina;
 },
 {
 glyphname = uni0712.medi;
+lastChange = "2024-06-30 06:37:40 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (293,-40);
-},
-{
-name = bottom_;
-pos = (293,-40);
-},
-{
-name = bottom__;
-pos = (293,-40);
+pos = (303,-20);
 },
 {
 name = top;
-pos = (148,-49);
-},
-{
-name = top_;
-pos = (148,-49);
-},
-{
-name = top__;
-pos = (148,-49);
-},
-{
-name = top___;
-pos = (171,260);
-},
-{
-name = top____;
-pos = (296,250);
+pos = (303,323);
 }
 );
 hints = (
@@ -2266,40 +1457,17 @@ note = uni0712.medi;
 },
 {
 glyphname = uni0712.init;
+lastChange = "2024-06-30 06:37:54 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (293,-40);
-},
-{
-name = bottom_;
-pos = (293,-40);
-},
-{
-name = bottom__;
-pos = (293,-40);
+pos = (303,-20);
 },
 {
 name = top;
-pos = (278,-75);
-},
-{
-name = top_;
-pos = (278,-75);
-},
-{
-name = top__;
-pos = (278,-75);
-},
-{
-name = top___;
-pos = (285,413);
-},
-{
-name = top____;
-pos = (296,250);
+pos = (303,323);
 }
 );
 hints = (
@@ -2341,40 +1509,17 @@ note = uni0712.init;
 },
 {
 glyphname = uni0713;
+lastChange = "2024-06-30 06:45:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (466,-116);
-},
-{
-name = bottom_;
-pos = (466,-116);
-},
-{
-name = bottom__;
-pos = (466,-116);
+pos = (253,-20);
 },
 {
 name = top;
-pos = (327,-72);
-},
-{
-name = top_;
-pos = (327,-72);
-},
-{
-name = top__;
-pos = (327,-72);
-},
-{
-name = top___;
-pos = (347,293);
-},
-{
-name = top____;
-pos = (453,130);
+pos = (253,323);
 }
 );
 hints = (
@@ -2418,40 +1563,17 @@ unicode = 1811;
 },
 {
 glyphname = uni0713.fina;
+lastChange = "2024-06-30 06:46:11 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (441,-116);
-},
-{
-name = bottom_;
-pos = (441,-116);
-},
-{
-name = bottom__;
-pos = (441,-116);
+pos = (253,-20);
 },
 {
 name = top;
-pos = (302,-73);
-},
-{
-name = top_;
-pos = (302,-73);
-},
-{
-name = top__;
-pos = (302,-73);
-},
-{
-name = top___;
-pos = (322,293);
-},
-{
-name = top____;
-pos = (428,129);
+pos = (253,323);
 }
 );
 hints = (
@@ -2496,40 +1618,17 @@ note = uni0713.fina;
 },
 {
 glyphname = uni0713.medi;
+lastChange = "2024-06-30 06:46:34 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (254,-115);
-},
-{
-name = bottom_;
-pos = (254,-115);
-},
-{
-name = bottom__;
-pos = (254,-115);
+pos = (202,-20);
 },
 {
 name = top;
-pos = (124,-79);
-},
-{
-name = top_;
-pos = (124,-79);
-},
-{
-name = top__;
-pos = (124,-79);
-},
-{
-name = top___;
-pos = (136,293);
-},
-{
-name = top____;
-pos = (242,127);
+pos = (202,323);
 }
 );
 hints = (
@@ -2574,40 +1673,17 @@ note = uni0713.medi;
 },
 {
 glyphname = uni0713.init;
+lastChange = "2024-06-30 06:46:53 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (255,-116);
-},
-{
-name = bottom_;
-pos = (255,-116);
-},
-{
-name = bottom__;
-pos = (255,-116);
+pos = (202,-20);
 },
 {
 name = top;
-pos = (173,-105);
-},
-{
-name = top_;
-pos = (173,-105);
-},
-{
-name = top__;
-pos = (173,-105);
-},
-{
-name = top___;
-pos = (181,495);
-},
-{
-name = top____;
-pos = (242,127);
+pos = (202,323);
 }
 );
 hints = (
@@ -2650,24 +1726,17 @@ note = uni0713.init;
 },
 {
 glyphname = uni0714;
+lastChange = "2024-06-30 06:47:50 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-20);
+},
+{
 name = top;
-pos = (328,-73);
-},
-{
-name = top_;
-pos = (328,-73);
-},
-{
-name = top__;
-pos = (328,-73);
-},
-{
-name = top___;
-pos = (347,293);
+pos = (253,323);
 }
 );
 hints = (
@@ -2713,40 +1782,17 @@ unicode = 1812;
 },
 {
 glyphname = uni0714.fina;
+lastChange = "2024-06-30 06:47:50 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (441,-116);
-},
-{
-name = bottom_;
-pos = (441,-116);
-},
-{
-name = bottom__;
-pos = (441,-116);
+pos = (253,-20);
 },
 {
 name = top;
-pos = (300,-73);
-},
-{
-name = top_;
-pos = (300,-73);
-},
-{
-name = top__;
-pos = (300,-73);
-},
-{
-name = top___;
-pos = (323,293);
-},
-{
-name = top____;
-pos = (428,129);
+pos = (253,323);
 }
 );
 hints = (
@@ -2798,40 +1844,17 @@ note = uni0714.fina;
 },
 {
 glyphname = uni0714.medi;
+lastChange = "2024-06-30 06:48:22 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (254,-115);
-},
-{
-name = bottom_;
-pos = (254,-115);
-},
-{
-name = bottom__;
-pos = (254,-115);
+pos = (202,-20);
 },
 {
 name = top;
-pos = (124,-78);
-},
-{
-name = top_;
-pos = (124,-78);
-},
-{
-name = top__;
-pos = (124,-78);
-},
-{
-name = top___;
-pos = (136,293);
-},
-{
-name = top____;
-pos = (242,127);
+pos = (202,323);
 }
 );
 hints = (
@@ -2893,24 +1916,17 @@ note = uni0714.medi;
 },
 {
 glyphname = uni0714.init;
+lastChange = "2024-06-30 06:48:22 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (202,-20);
+},
+{
 name = top;
-pos = (125,-78);
-},
-{
-name = top_;
-pos = (125,-78);
-},
-{
-name = top__;
-pos = (125,-78);
-},
-{
-name = top___;
-pos = (136,293);
+pos = (202,323);
 }
 );
 hints = (
@@ -2955,40 +1971,17 @@ note = uni0714.init;
 },
 {
 glyphname = uni0715;
+lastChange = "2024-06-30 06:49:01 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (247,-53);
-},
-{
-name = bottom_;
-pos = (247,-53);
-},
-{
-name = bottom__;
-pos = (247,-53);
+pos = (203,-20);
 },
 {
 name = top;
-pos = (127,-36);
-},
-{
-name = top_;
-pos = (127,-36);
-},
-{
-name = top__;
-pos = (127,-36);
-},
-{
-name = top___;
-pos = (126,263);
-},
-{
-name = top____;
-pos = (240,246);
+pos = (203,323);
 }
 );
 hints = (
@@ -3042,40 +2035,17 @@ unicode = 1813;
 },
 {
 glyphname = uni0715.fina;
+lastChange = "2024-06-30 06:51:04 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (219,-53);
-},
-{
-name = bottom_;
-pos = (219,-53);
-},
-{
-name = bottom__;
-pos = (219,-53);
+pos = (203,-20);
 },
 {
 name = top;
-pos = (99,-36);
-},
-{
-name = top_;
-pos = (99,-36);
-},
-{
-name = top__;
-pos = (99,-36);
-},
-{
-name = top___;
-pos = (101,263);
-},
-{
-name = top____;
-pos = (215,246);
+pos = (203,323);
 }
 );
 hints = (
@@ -3130,40 +2100,17 @@ note = uni0715.fina;
 },
 {
 glyphname = uni0716;
+lastChange = "2024-06-30 06:50:35 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (247,-53);
-},
-{
-name = bottom_;
-pos = (247,-53);
-},
-{
-name = bottom__;
-pos = (247,-53);
+pos = (203,-20);
 },
 {
 name = top;
-pos = (127,-36);
-},
-{
-name = top_;
-pos = (127,-36);
-},
-{
-name = top__;
-pos = (127,-36);
-},
-{
-name = top___;
-pos = (126,262);
-},
-{
-name = top____;
-pos = (240,246);
+pos = (203,323);
 }
 );
 hints = (
@@ -3205,40 +2152,17 @@ unicode = 1814;
 },
 {
 glyphname = uni0716.fina;
+lastChange = "2024-06-30 06:51:23 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (219,-53);
-},
-{
-name = bottom_;
-pos = (219,-53);
-},
-{
-name = bottom__;
-pos = (219,-53);
+pos = (203,-20);
 },
 {
 name = top;
-pos = (99,-36);
-},
-{
-name = top_;
-pos = (99,-36);
-},
-{
-name = top__;
-pos = (99,-36);
-},
-{
-name = top___;
-pos = (101,262);
-},
-{
-name = top____;
-pos = (215,246);
+pos = (203,323);
 }
 );
 hints = (
@@ -3280,24 +2204,17 @@ note = uni0716.fina;
 },
 {
 glyphname = uni0717;
+lastChange = "2024-06-30 06:52:21 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (305,-20);
+},
+{
 name = top;
-pos = (263,-48);
-},
-{
-name = top_;
-pos = (263,-48);
-},
-{
-name = top__;
-pos = (263,-48);
-},
-{
-name = top___;
-pos = (258,270);
+pos = (305,323);
 }
 );
 hints = (
@@ -3356,24 +2273,17 @@ unicode = 1815;
 },
 {
 glyphname = uni0717.fina;
+lastChange = "2024-06-30 06:52:56 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (237,-48);
-},
-{
-name = top_;
-pos = (237,-48);
-},
-{
-name = top__;
-pos = (237,-48);
-},
-{
-name = top___;
-pos = (233,270);
+pos = (304,323);
 }
 );
 hints = (
@@ -3438,25 +2348,17 @@ note = uni0717.fina;
 },
 {
 glyphname = uni0718;
-lastChange = "2024-06-29 08:15:26 +0000";
+lastChange = "2024-06-30 06:41:35 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (184,-49);
-},
-{
-name = top_;
-pos = (184,-49);
-},
-{
-name = top__;
-pos = (184,-49);
-},
-{
-name = top___;
-pos = (165,269);
+pos = (203,323);
 }
 );
 hints = (
@@ -3505,25 +2407,17 @@ unicode = 1816;
 },
 {
 glyphname = uni0718.fina;
-lastChange = "2024-06-29 08:15:56 +0000";
+lastChange = "2024-06-30 06:42:07 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (158,-49);
-},
-{
-name = top_;
-pos = (158,-49);
-},
-{
-name = top__;
-pos = (158,-49);
-},
-{
-name = top___;
-pos = (139,269);
+pos = (203,323);
 }
 );
 hints = (
@@ -3573,24 +2467,17 @@ note = uni0718.fina;
 },
 {
 glyphname = uni0719;
+lastChange = "2024-06-30 06:43:51 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (102,-121);
+},
+{
 name = top;
-pos = (102,-69);
-},
-{
-name = top_;
-pos = (102,-69);
-},
-{
-name = top__;
-pos = (102,-69);
-},
-{
-name = top___;
-pos = (70,269);
+pos = (102,222);
 }
 );
 hints = (
@@ -3624,24 +2511,17 @@ unicode = 1817;
 },
 {
 glyphname = uni0719.fina;
+lastChange = "2024-06-30 06:44:55 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (102,-121);
+},
+{
 name = top;
-pos = (76,-68);
-},
-{
-name = top_;
-pos = (76,-68);
-},
-{
-name = top__;
-pos = (76,-68);
-},
-{
-name = top___;
-pos = (44,269);
+pos = (102,222);
 }
 );
 hints = (
@@ -3678,24 +2558,17 @@ note = uni0719.fina;
 },
 {
 glyphname = uni071A;
+lastChange = "2024-06-30 06:33:25 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (354,-20);
+},
+{
 name = top;
-pos = (266,-49);
-},
-{
-name = top_;
-pos = (266,-49);
-},
-{
-name = top__;
-pos = (266,-49);
-},
-{
-name = top___;
-pos = (242,229);
+pos = (354,222);
 }
 );
 hints = (
@@ -3735,24 +2608,17 @@ unicode = 1818;
 },
 {
 glyphname = uni071A.fina;
+lastChange = "2024-06-30 06:32:48 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (354,-20);
+},
+{
 name = top;
-pos = (382,-97);
-},
-{
-name = top_;
-pos = (382,-97);
-},
-{
-name = top__;
-pos = (382,-97);
-},
-{
-name = top___;
-pos = (300,323);
+pos = (354,222);
 }
 );
 hints = (
@@ -3793,24 +2659,17 @@ note = uni071A.fina;
 },
 {
 glyphname = uni071A.medi;
+lastChange = "2024-06-30 06:53:35 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (324,-20);
+},
+{
 name = top;
-pos = (151,-49);
-},
-{
-name = top_;
-pos = (151,-49);
-},
-{
-name = top__;
-pos = (151,-49);
-},
-{
-name = top___;
-pos = (121,229);
+pos = (324,222);
 }
 );
 hints = (
@@ -3851,24 +2710,17 @@ note = uni071A.medi;
 },
 {
 glyphname = uni071A.init;
+lastChange = "2024-06-30 06:34:02 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (324,-20);
+},
+{
 name = top;
-pos = (152,-49);
-},
-{
-name = top_;
-pos = (152,-49);
-},
-{
-name = top__;
-pos = (152,-49);
-},
-{
-name = top___;
-pos = (121,230);
+pos = (324,222);
 }
 );
 hints = (
@@ -3907,24 +2759,17 @@ note = uni071A.init;
 },
 {
 glyphname = uni071B;
+lastChange = "2024-06-30 06:55:35 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-222);
+},
+{
 name = top;
-pos = (308,-209);
-},
-{
-name = top_;
-pos = (308,-209);
-},
-{
-name = top__;
-pos = (308,-209);
-},
-{
-name = top___;
-pos = (288,377);
+pos = (253,323);
 }
 );
 hints = (
@@ -3982,24 +2827,17 @@ unicode = 1819;
 },
 {
 glyphname = uni071B.fina;
+lastChange = "2024-06-30 06:55:58 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-222);
+},
+{
 name = top;
-pos = (282,-209);
-},
-{
-name = top_;
-pos = (282,-209);
-},
-{
-name = top__;
-pos = (282,-209);
-},
-{
-name = top___;
-pos = (263,375);
+pos = (253,323);
 }
 );
 hints = (
@@ -4058,24 +2896,17 @@ note = uni071B.fina;
 },
 {
 glyphname = uni071B.medi;
+lastChange = "2024-06-30 06:56:25 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (202,-222);
+},
+{
 name = top;
-pos = (132,-209);
-},
-{
-name = top_;
-pos = (132,-209);
-},
-{
-name = top__;
-pos = (132,-209);
-},
-{
-name = top___;
-pos = (112,375);
+pos = (202,323);
 }
 );
 hints = (
@@ -4134,24 +2965,17 @@ note = uni071B.medi;
 },
 {
 glyphname = uni071B.init;
+lastChange = "2024-06-30 06:56:46 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (202,-222);
+},
+{
 name = top;
-pos = (132,-209);
-},
-{
-name = top_;
-pos = (132,-209);
-},
-{
-name = top__;
-pos = (132,-209);
-},
-{
-name = top___;
-pos = (112,375);
+pos = (202,323);
 }
 );
 hints = (
@@ -4208,24 +3032,17 @@ note = uni071B.init;
 },
 {
 glyphname = uni071C;
+lastChange = "2024-06-30 06:57:24 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-222);
+},
+{
 name = top;
-pos = (307,-209);
-},
-{
-name = top_;
-pos = (307,-209);
-},
-{
-name = top__;
-pos = (307,-209);
-},
-{
-name = top___;
-pos = (287,375);
+pos = (253,323);
 }
 );
 hints = (
@@ -4301,24 +3118,17 @@ unicode = 1820;
 },
 {
 glyphname = uni071C.fina;
+lastChange = "2024-06-30 06:57:10 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-222);
+},
+{
 name = top;
-pos = (282,-209);
-},
-{
-name = top_;
-pos = (282,-209);
-},
-{
-name = top__;
-pos = (282,-209);
-},
-{
-name = top___;
-pos = (263,375);
+pos = (253,323);
 }
 );
 hints = (
@@ -4395,24 +3205,17 @@ note = uni071C.fina;
 },
 {
 glyphname = uni071C.medi;
+lastChange = "2024-06-30 06:57:37 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (202,-222);
+},
+{
 name = top;
-pos = (132,-209);
-},
-{
-name = top_;
-pos = (132,-209);
-},
-{
-name = top__;
-pos = (132,-209);
-},
-{
-name = top___;
-pos = (112,375);
+pos = (202,323);
 }
 );
 hints = (
@@ -4489,24 +3292,17 @@ note = uni071C.medi;
 },
 {
 glyphname = uni071C.init;
+lastChange = "2024-06-30 06:57:10 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (202,-222);
+},
+{
 name = top;
-pos = (132,-209);
-},
-{
-name = top_;
-pos = (132,-209);
-},
-{
-name = top__;
-pos = (132,-209);
-},
-{
-name = top___;
-pos = (112,375);
+pos = (202,323);
 }
 );
 hints = (
@@ -4581,24 +3377,17 @@ note = uni071C.init;
 },
 {
 glyphname = uni071D;
+lastChange = "2024-06-30 06:54:10 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (86,-113);
-},
-{
-name = top_;
-pos = (86,-113);
-},
-{
-name = top__;
-pos = (86,-113);
-},
-{
-name = top___;
-pos = (68,173);
+pos = (203,222);
 }
 );
 hints = (
@@ -4634,24 +3423,17 @@ unicode = 1821;
 },
 {
 glyphname = uni071D.fina;
+lastChange = "2024-06-30 05:45:57 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (60,-113);
-},
-{
-name = top_;
-pos = (60,-113);
-},
-{
-name = top__;
-pos = (60,-113);
-},
-{
-name = top___;
-pos = (43,173);
+pos = (203,221);
 }
 );
 hints = (
@@ -4688,24 +3470,17 @@ note = uni071D.fina;
 },
 {
 glyphname = uni071D.medi;
+lastChange = "2024-06-30 06:39:10 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (152,-20);
+},
+{
 name = top;
-pos = (76,-49);
-},
-{
-name = top_;
-pos = (76,-49);
-},
-{
-name = top__;
-pos = (76,-49);
-},
-{
-name = top___;
-pos = (69,210);
+pos = (152,222);
 }
 );
 hints = (
@@ -4742,24 +3517,17 @@ note = uni071D.medi;
 },
 {
 glyphname = uni071D.init;
+lastChange = "2024-06-30 06:39:21 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (152,-20);
+},
+{
 name = top;
-pos = (68,-48);
-},
-{
-name = top_;
-pos = (68,-48);
-},
-{
-name = top__;
-pos = (68,-48);
-},
-{
-name = top___;
-pos = (63,204);
+pos = (152,222);
 }
 );
 hints = (
@@ -4794,8 +3562,19 @@ note = uni071D.init;
 },
 {
 glyphname = uni071E;
+lastChange = "2024-06-30 06:58:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (430,-20);
+},
+{
+name = top;
+pos = (430,500);
+}
+);
 hints = (
 {
 horizontal = 1;
@@ -4922,40 +3701,17 @@ unicode = 1822;
 },
 {
 glyphname = uni071F;
+lastChange = "2024-06-30 06:59:31 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (359,-78);
-},
-{
-name = bottom_;
-pos = (359,-78);
-},
-{
-name = bottom__;
-pos = (359,-78);
+pos = (228,31);
 },
 {
 name = top;
-pos = (194,-58);
-},
-{
-name = top_;
-pos = (194,-58);
-},
-{
-name = top__;
-pos = (194,-58);
-},
-{
-name = top___;
-pos = (188,226);
-},
-{
-name = top____;
-pos = (367,215);
+pos = (228,273);
 }
 );
 hints = (
@@ -5010,40 +3766,17 @@ unicode = 1823;
 },
 {
 glyphname = uni071F.fina;
+lastChange = "2024-06-30 07:00:16 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (334,-80);
-},
-{
-name = bottom_;
-pos = (334,-80);
-},
-{
-name = bottom__;
-pos = (334,-80);
+pos = (253,31);
 },
 {
 name = top;
-pos = (169,-58);
-},
-{
-name = top_;
-pos = (169,-58);
-},
-{
-name = top__;
-pos = (169,-58);
-},
-{
-name = top___;
-pos = (163,226);
-},
-{
-name = top____;
-pos = (341,215);
+pos = (253,273);
 }
 );
 hints = (
@@ -5106,40 +3839,17 @@ note = uni071F.fina;
 },
 {
 glyphname = uni071F.medi;
+lastChange = "2024-06-30 07:00:47 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (273,-46);
-},
-{
-name = bottom_;
-pos = (273,-46);
-},
-{
-name = bottom__;
-pos = (273,-46);
+pos = (303,-20);
 },
 {
 name = top;
-pos = (143,-49);
-},
-{
-name = top_;
-pos = (143,-49);
-},
-{
-name = top__;
-pos = (143,-49);
-},
-{
-name = top___;
-pos = (126,261);
-},
-{
-name = top____;
-pos = (256,203);
+pos = (303,323);
 }
 );
 hints = (
@@ -5189,40 +3899,17 @@ note = uni071F.medi;
 },
 {
 glyphname = uni071F.init;
+lastChange = "2024-06-30 07:01:09 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (273,-46);
-},
-{
-name = bottom_;
-pos = (273,-46);
-},
-{
-name = bottom__;
-pos = (273,-46);
+pos = (303,-20);
 },
 {
 name = top;
-pos = (143,-49);
-},
-{
-name = top_;
-pos = (143,-49);
-},
-{
-name = top__;
-pos = (143,-49);
-},
-{
-name = top___;
-pos = (126,261);
-},
-{
-name = top____;
-pos = (256,204);
+pos = (303,323);
 }
 );
 hints = (
@@ -5270,24 +3957,17 @@ note = uni071F.init;
 },
 {
 glyphname = uni0720;
+lastChange = "2024-06-30 07:02:30 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (303,-20);
+},
+{
 name = top;
-pos = (159,-49);
-},
-{
-name = top_;
-pos = (159,-49);
-},
-{
-name = top__;
-pos = (159,-49);
-},
-{
-name = top___;
-pos = (139,406);
+pos = (303,525);
 }
 );
 hints = (
@@ -5323,24 +4003,17 @@ unicode = 1824;
 },
 {
 glyphname = uni0720.fina;
+lastChange = "2024-06-30 07:02:54 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (159,-49);
-},
-{
-name = top_;
-pos = (159,-49);
-},
-{
-name = top__;
-pos = (159,-49);
-},
-{
-name = top___;
-pos = (139,406);
+pos = (304,525);
 }
 );
 hints = (
@@ -5377,24 +4050,17 @@ note = uni0720.fina;
 },
 {
 glyphname = uni0720.medi;
+lastChange = "2024-06-30 07:03:45 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (152,-20);
+},
+{
 name = top;
-pos = (97,-49);
-},
-{
-name = top_;
-pos = (97,-49);
-},
-{
-name = top__;
-pos = (97,-49);
-},
-{
-name = top___;
-pos = (-15,406);
+pos = (152,525);
 }
 );
 hints = (
@@ -5431,24 +4097,17 @@ note = uni0720.medi;
 },
 {
 glyphname = uni0720.init;
+lastChange = "2024-06-30 07:04:13 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (152,-20);
+},
+{
 name = top;
-pos = (85,-49);
-},
-{
-name = top_;
-pos = (85,-49);
-},
-{
-name = top__;
-pos = (85,-49);
-},
-{
-name = top___;
-pos = (-14,406);
+pos = (152,525);
 }
 );
 hints = (
@@ -5483,24 +4142,17 @@ note = uni0720.init;
 },
 {
 glyphname = uni0721;
+lastChange = "2024-06-30 07:05:14 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (354,-20);
+},
+{
 name = top;
-pos = (329,-49);
-},
-{
-name = top_;
-pos = (329,-49);
-},
-{
-name = top__;
-pos = (329,-49);
-},
-{
-name = top___;
-pos = (267,269);
+pos = (354,323);
 }
 );
 hints = (
@@ -5556,24 +4208,17 @@ unicode = 1825;
 },
 {
 glyphname = uni0721.fina;
+lastChange = "2024-06-30 07:06:12 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (380,-20);
+},
+{
 name = top;
-pos = (303,-49);
-},
-{
-name = top_;
-pos = (303,-49);
-},
-{
-name = top__;
-pos = (303,-49);
-},
-{
-name = top___;
-pos = (242,269);
+pos = (380,324);
 }
 );
 hints = (
@@ -5630,24 +4275,17 @@ note = uni0721.fina;
 },
 {
 glyphname = uni0721.medi;
+lastChange = "2024-06-30 07:08:01 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (278,-20);
+},
+{
 name = top;
-pos = (233,-48);
-},
-{
-name = top_;
-pos = (233,-48);
-},
-{
-name = top__;
-pos = (233,-48);
-},
-{
-name = top___;
-pos = (241,263);
+pos = (278,323);
 }
 );
 hints = (
@@ -5701,24 +4339,17 @@ note = uni0721.medi;
 },
 {
 glyphname = uni0721.init;
+lastChange = "2024-06-30 07:08:23 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (278,-20);
+},
+{
 name = top;
-pos = (233,-48);
-},
-{
-name = top_;
-pos = (233,-48);
-},
-{
-name = top__;
-pos = (233,-48);
-},
-{
-name = top___;
-pos = (242,263);
+pos = (278,323);
 }
 );
 hints = (
@@ -5770,24 +4401,17 @@ note = uni0721.init;
 },
 {
 glyphname = uni0722;
+lastChange = "2024-06-30 07:08:59 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (102,-222);
+},
+{
 name = top;
-pos = (101,-80);
-},
-{
-name = top_;
-pos = (101,-80);
-},
-{
-name = top__;
-pos = (101,-80);
-},
-{
-name = top___;
-pos = (124,151);
+pos = (102,121);
 }
 );
 hints = (
@@ -5821,24 +4445,17 @@ unicode = 1826;
 },
 {
 glyphname = uni0722.fina;
+lastChange = "2024-06-30 07:09:57 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (102,-222);
+},
+{
 name = top;
-pos = (62,-195);
-},
-{
-name = top_;
-pos = (62,-195);
-},
-{
-name = top__;
-pos = (62,-195);
-},
-{
-name = top___;
-pos = (55,143);
+pos = (102,121);
 }
 );
 hints = (
@@ -5873,24 +4490,17 @@ note = uni0722.fina;
 },
 {
 glyphname = uni0722.medi;
+lastChange = "2024-06-30 07:10:25 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (76,-20);
+},
+{
 name = top;
-pos = (75,-48);
-},
-{
-name = top_;
-pos = (75,-48);
-},
-{
-name = top__;
-pos = (75,-48);
-},
-{
-name = top___;
-pos = (58,269);
+pos = (76,323);
 }
 );
 hints = (
@@ -5927,24 +4537,17 @@ note = uni0722.medi;
 },
 {
 glyphname = uni0722.init;
+lastChange = "2024-06-30 07:10:46 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (77,-20);
+},
+{
 name = top;
-pos = (66,-48);
-},
-{
-name = top_;
-pos = (66,-48);
-},
-{
-name = top__;
-pos = (66,-48);
-},
-{
-name = top___;
-pos = (59,269);
+pos = (77,323);
 }
 );
 hints = (
@@ -5979,24 +4582,17 @@ note = uni0722.init;
 },
 {
 glyphname = uni0723;
+lastChange = "2024-06-30 07:11:29 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (255,-49);
-},
-{
-name = top_;
-pos = (255,-49);
-},
-{
-name = top__;
-pos = (255,-49);
-},
-{
-name = top___;
-pos = (255,246);
+pos = (304,323);
 }
 );
 hints = (
@@ -6052,24 +4648,17 @@ unicode = 1827;
 },
 {
 glyphname = uni0723.fina;
+lastChange = "2024-06-30 07:11:49 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (226,-49);
-},
-{
-name = top_;
-pos = (226,-49);
-},
-{
-name = top__;
-pos = (226,-49);
-},
-{
-name = top___;
-pos = (229,246);
+pos = (304,323);
 }
 );
 hints = (
@@ -6126,24 +4715,17 @@ note = uni0723.fina;
 },
 {
 glyphname = uni0723.medi;
+lastChange = "2024-06-30 07:12:25 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (229,-49);
-},
-{
-name = top_;
-pos = (229,-49);
-},
-{
-name = top__;
-pos = (229,-49);
-},
-{
-name = top___;
-pos = (229,246);
+pos = (304,323);
 }
 );
 hints = (
@@ -6202,24 +4784,17 @@ note = uni0723.medi;
 },
 {
 glyphname = uni0723.init;
+lastChange = "2024-06-30 07:12:43 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (229,-49);
-},
-{
-name = top_;
-pos = (229,-49);
-},
-{
-name = top__;
-pos = (229,-49);
-},
-{
-name = top___;
-pos = (229,246);
+pos = (304,323);
 }
 );
 hints = (
@@ -6276,24 +4851,17 @@ note = uni0723.init;
 },
 {
 glyphname = uni0724;
+lastChange = "2024-06-30 07:13:19 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (253,-48);
-},
-{
-name = top_;
-pos = (253,-48);
-},
-{
-name = top__;
-pos = (253,-48);
-},
-{
-name = top___;
-pos = (255,246);
+pos = (304,323);
 }
 );
 hints = (
@@ -6353,24 +4921,17 @@ unicode = 1828;
 },
 {
 glyphname = uni0724.fina;
+lastChange = "2024-06-30 07:13:19 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (227,-48);
-},
-{
-name = top_;
-pos = (227,-48);
-},
-{
-name = top__;
-pos = (227,-48);
-},
-{
-name = top___;
-pos = (228,246);
+pos = (304,323);
 }
 );
 hints = (
@@ -6431,24 +4992,17 @@ note = uni0724.fina;
 },
 {
 glyphname = uni0724.medi;
+lastChange = "2024-06-30 07:13:19 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (350,-105);
-},
-{
-name = top_;
-pos = (350,-105);
-},
-{
-name = top__;
-pos = (350,-105);
-},
-{
-name = top___;
-pos = (350,435);
+pos = (304,323);
 }
 );
 hints = (
@@ -6511,24 +5065,17 @@ note = uni0724.medi;
 },
 {
 glyphname = uni0724.init;
+lastChange = "2024-06-30 07:13:19 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (229,-49);
-},
-{
-name = top_;
-pos = (229,-49);
-},
-{
-name = top__;
-pos = (229,-49);
-},
-{
-name = top___;
-pos = (229,246);
+pos = (304,323);
 }
 );
 hints = (
@@ -6589,24 +5136,17 @@ note = uni0724.init;
 },
 {
 glyphname = uni0725;
+lastChange = "2024-06-30 07:16:28 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-20);
+},
+{
 name = top;
-pos = (252,-49);
-},
-{
-name = top_;
-pos = (252,-49);
-},
-{
-name = top__;
-pos = (252,-49);
-},
-{
-name = top___;
-pos = (257,244);
+pos = (253,273);
 }
 );
 hints = (
@@ -6657,24 +5197,17 @@ unicode = 1829;
 },
 {
 glyphname = uni0725.fina;
+lastChange = "2024-06-30 07:16:03 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-20);
+},
+{
 name = top;
-pos = (226,-49);
-},
-{
-name = top_;
-pos = (226,-49);
-},
-{
-name = top__;
-pos = (226,-49);
-},
-{
-name = top___;
-pos = (231,244);
+pos = (253,273);
 }
 );
 hints = (
@@ -6724,24 +5257,17 @@ note = uni0725.fina;
 },
 {
 glyphname = uni0725.medi;
+lastChange = "2024-06-30 07:16:45 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (202,-20);
+},
+{
 name = top;
-pos = (136,-49);
-},
-{
-name = top_;
-pos = (136,-49);
-},
-{
-name = top__;
-pos = (136,-49);
-},
-{
-name = top___;
-pos = (110,244);
+pos = (202,273);
 }
 );
 hints = (
@@ -6791,24 +5317,17 @@ note = uni0725.medi;
 },
 {
 glyphname = uni0725.init;
+lastChange = "2024-06-30 07:17:04 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (202,-20);
+},
+{
 name = top;
-pos = (136,-49);
-},
-{
-name = top_;
-pos = (136,-49);
-},
-{
-name = top__;
-pos = (136,-49);
-},
-{
-name = top___;
-pos = (111,244);
+pos = (202,273);
 }
 );
 hints = (
@@ -6858,40 +5377,17 @@ note = uni0725.init;
 },
 {
 glyphname = uni0726;
+lastChange = "2024-06-30 07:18:26 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (394,-47);
-},
-{
-name = bottom_;
-pos = (394,-47);
-},
-{
-name = bottom__;
-pos = (394,-47);
+pos = (324,-20);
 },
 {
 name = top;
-pos = (234,-48);
-},
-{
-name = top_;
-pos = (234,-48);
-},
-{
-name = top__;
-pos = (234,-48);
-},
-{
-name = top___;
-pos = (257,317);
-},
-{
-name = top____;
-pos = (376,279);
+pos = (324,323);
 }
 );
 hints = (
@@ -6952,40 +5448,17 @@ unicode = 1830;
 },
 {
 glyphname = uni0726.fina;
+lastChange = "2024-06-30 07:18:01 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (368,-40);
-},
-{
-name = bottom_;
-pos = (368,-40);
-},
-{
-name = bottom__;
-pos = (368,-40);
+pos = (324,-20);
 },
 {
 name = top;
-pos = (208,-48);
-},
-{
-name = top_;
-pos = (208,-48);
-},
-{
-name = top__;
-pos = (208,-48);
-},
-{
-name = top___;
-pos = (231,317);
-},
-{
-name = top____;
-pos = (350,279);
+pos = (324,323);
 }
 );
 hints = (
@@ -7047,40 +5520,17 @@ note = uni0726.fina;
 },
 {
 glyphname = uni0726.medi;
+lastChange = "2024-06-30 07:18:48 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (255,-41);
-},
-{
-name = bottom_;
-pos = (255,-41);
-},
-{
-name = bottom__;
-pos = (255,-41);
+pos = (273,-20);
 },
 {
 name = top;
-pos = (133,-48);
-},
-{
-name = top_;
-pos = (133,-48);
-},
-{
-name = top__;
-pos = (133,-48);
-},
-{
-name = top___;
-pos = (118,317);
-},
-{
-name = top____;
-pos = (238,279);
+pos = (273,323);
 }
 );
 hints = (
@@ -7142,40 +5592,17 @@ note = uni0726.medi;
 },
 {
 glyphname = uni0726.init;
+lastChange = "2024-06-30 07:19:10 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (256,-47);
-},
-{
-name = bottom_;
-pos = (256,-47);
-},
-{
-name = bottom__;
-pos = (256,-47);
+pos = (273,-20);
 },
 {
 name = top;
-pos = (133,-49);
-},
-{
-name = top_;
-pos = (133,-49);
-},
-{
-name = top__;
-pos = (133,-49);
-},
-{
-name = top___;
-pos = (117,317);
-},
-{
-name = top____;
-pos = (237,279);
+pos = (273,323);
 }
 );
 hints = (
@@ -7235,24 +5662,17 @@ note = uni0726.init;
 },
 {
 glyphname = uni0727;
+lastChange = "2024-06-30 07:19:55 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (243,-20);
+},
+{
 name = top;
-pos = (240,-49);
-},
-{
-name = top_;
-pos = (240,-49);
-},
-{
-name = top__;
-pos = (240,-49);
-},
-{
-name = top___;
-pos = (260,367);
+pos = (243,323);
 }
 );
 hints = (
@@ -7313,24 +5733,17 @@ unicode = 1831;
 },
 {
 glyphname = uni0727.fina;
+lastChange = "2024-06-30 07:20:15 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (243,-20);
+},
+{
 name = top;
-pos = (266,-49);
-},
-{
-name = top_;
-pos = (266,-49);
-},
-{
-name = top__;
-pos = (266,-49);
-},
-{
-name = top___;
-pos = (285,367);
+pos = (243,323);
 }
 );
 hints = (
@@ -7390,24 +5803,17 @@ note = uni0727.fina;
 },
 {
 glyphname = uni0727.medi;
+lastChange = "2024-06-30 07:20:44 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (192,-20);
+},
+{
 name = top;
-pos = (156,-48);
-},
-{
-name = top_;
-pos = (156,-48);
-},
-{
-name = top__;
-pos = (156,-48);
-},
-{
-name = top___;
-pos = (151,367);
+pos = (192,323);
 }
 );
 hints = (
@@ -7469,24 +5875,17 @@ note = uni0727.medi;
 },
 {
 glyphname = uni0727.init;
+lastChange = "2024-06-30 07:21:01 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (192,-20);
+},
+{
 name = top;
-pos = (155,-47);
-},
-{
-name = top_;
-pos = (155,-47);
-},
-{
-name = top__;
-pos = (155,-47);
-},
-{
-name = top___;
-pos = (151,367);
+pos = (192,323);
 }
 );
 hints = (
@@ -7548,24 +5947,17 @@ note = uni0727.init;
 },
 {
 glyphname = uni0728;
+lastChange = "2024-06-30 07:21:54 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-324);
+},
+{
 name = top;
-pos = (148,-227);
-},
-{
-name = top_;
-pos = (148,-227);
-},
-{
-name = top__;
-pos = (148,-227);
-},
-{
-name = top___;
-pos = (163,136);
+pos = (253,121);
 }
 );
 hints = (
@@ -7612,24 +6004,17 @@ unicode = 1832;
 },
 {
 glyphname = uni0728.fina;
+lastChange = "2024-06-30 07:22:23 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-324);
+},
+{
 name = top;
-pos = (149,-227);
-},
-{
-name = top_;
-pos = (149,-227);
-},
-{
-name = top__;
-pos = (149,-227);
-},
-{
-name = top___;
-pos = (163,137);
+pos = (253,121);
 }
 );
 hints = (
@@ -7675,24 +6060,17 @@ note = uni0728.fina;
 },
 {
 glyphname = uni0729;
+lastChange = "2024-06-30 07:23:05 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (292,-49);
-},
-{
-name = top_;
-pos = (292,-49);
-},
-{
-name = top__;
-pos = (292,-49);
-},
-{
-name = top___;
-pos = (279,262);
+pos = (304,323);
 }
 );
 hints = (
@@ -7746,24 +6124,17 @@ unicode = 1833;
 },
 {
 glyphname = uni0729.fina;
+lastChange = "2024-06-30 07:23:24 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (267,-49);
-},
-{
-name = top_;
-pos = (267,-49);
-},
-{
-name = top__;
-pos = (267,-49);
-},
-{
-name = top___;
-pos = (254,262);
+pos = (304,323);
 }
 );
 hints = (
@@ -7818,24 +6189,17 @@ note = uni0729.fina;
 },
 {
 glyphname = uni0729.medi;
+lastChange = "2024-06-30 07:24:11 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-20);
+},
+{
 name = top;
-pos = (182,-49);
-},
-{
-name = top_;
-pos = (182,-49);
-},
-{
-name = top__;
-pos = (182,-49);
-},
-{
-name = top___;
-pos = (169,262);
+pos = (253,323);
 }
 );
 hints = (
@@ -7890,24 +6254,17 @@ note = uni0729.medi;
 },
 {
 glyphname = uni0729.init;
+lastChange = "2024-06-30 07:24:35 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-20);
+},
+{
 name = top;
-pos = (182,-49);
-},
-{
-name = top_;
-pos = (182,-49);
-},
-{
-name = top__;
-pos = (182,-49);
-},
-{
-name = top___;
-pos = (169,262);
+pos = (253,323);
 }
 );
 hints = (
@@ -7960,24 +6317,17 @@ note = uni0729.init;
 },
 {
 glyphname = uni072A;
+lastChange = "2024-06-30 07:26:05 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (127,-36);
-},
-{
-name = top_;
-pos = (127,-36);
-},
-{
-name = top__;
-pos = (127,-36);
-},
-{
-name = top___;
-pos = (133,341);
+pos = (203,475);
 }
 );
 hints = (
@@ -8037,24 +6387,17 @@ unicode = 1834;
 },
 {
 glyphname = uni072A.fina;
+lastChange = "2024-06-30 07:26:23 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (99,-36);
-},
-{
-name = top_;
-pos = (99,-36);
-},
-{
-name = top__;
-pos = (99,-36);
-},
-{
-name = top___;
-pos = (107,342);
+pos = (203,475);
 }
 );
 hints = (
@@ -8114,24 +6457,17 @@ note = uni072A.fina;
 },
 {
 glyphname = uni072B;
+lastChange = "2024-06-30 07:26:58 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (263,-49);
-},
-{
-name = top_;
-pos = (263,-49);
-},
-{
-name = top__;
-pos = (263,-49);
-},
-{
-name = top___;
-pos = (264,269);
+pos = (304,323);
 }
 );
 hints = (
@@ -8178,24 +6514,17 @@ unicode = 1835;
 },
 {
 glyphname = uni072B.fina;
+lastChange = "2024-06-30 07:27:24 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (304,-20);
+},
+{
 name = top;
-pos = (237,-49);
-},
-{
-name = top_;
-pos = (237,-49);
-},
-{
-name = top__;
-pos = (237,-49);
-},
-{
-name = top___;
-pos = (240,269);
+pos = (304,323);
 }
 );
 hints = (
@@ -8241,24 +6570,17 @@ note = uni072B.fina;
 },
 {
 glyphname = uni072B.medi;
+lastChange = "2024-06-30 07:27:52 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-20);
+},
+{
 name = top;
-pos = (134,-49);
-},
-{
-name = top_;
-pos = (134,-49);
-},
-{
-name = top__;
-pos = (134,-49);
-},
-{
-name = top___;
-pos = (136,269);
+pos = (253,323);
 }
 );
 hints = (
@@ -8304,24 +6626,17 @@ note = uni072B.medi;
 },
 {
 glyphname = uni072B.init;
+lastChange = "2024-06-30 07:28:25 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (253,-20);
+},
+{
 name = top;
-pos = (134,-49);
-},
-{
-name = top_;
-pos = (134,-49);
-},
-{
-name = top__;
-pos = (134,-49);
-},
-{
-name = top___;
-pos = (137,269);
+pos = (253,323);
 }
 );
 hints = (
@@ -8367,41 +6682,17 @@ note = uni072B.init;
 },
 {
 glyphname = uni072C;
-lastChange = "2024-06-28 07:28:24 +0000";
+lastChange = "2024-06-30 07:28:51 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (350,-53);
-},
-{
-name = bottom_;
-pos = (350,-53);
-},
-{
-name = bottom__;
-pos = (350,-53);
+pos = (289,-20);
 },
 {
 name = top;
-pos = (212,-61);
-},
-{
-name = top_;
-pos = (212,-61);
-},
-{
-name = top__;
-pos = (212,-61);
-},
-{
-name = top___;
-pos = (224,362);
-},
-{
-name = top____;
-pos = (322,235);
+pos = (289,525);
 }
 );
 hints = (
@@ -8456,41 +6747,17 @@ unicode = 1836;
 },
 {
 glyphname = uni072C.fina;
-lastChange = "2024-06-28 07:28:49 +0000";
+lastChange = "2024-06-30 07:29:15 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (324,-53);
-},
-{
-name = bottom_;
-pos = (324,-53);
-},
-{
-name = bottom__;
-pos = (324,-53);
+pos = (289,-20);
 },
 {
 name = top;
-pos = (187,-60);
-},
-{
-name = top_;
-pos = (187,-60);
-},
-{
-name = top__;
-pos = (187,-60);
-},
-{
-name = top___;
-pos = (199,362);
-},
-{
-name = top____;
-pos = (296,235);
+pos = (289,525);
 }
 );
 hints = (
@@ -8546,24 +6813,17 @@ note = uni072C.fina;
 },
 {
 glyphname = uni0640;
+lastChange = "2024-06-30 07:29:41 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (95,-20);
+},
+{
 name = top;
-pos = (93,-49);
-},
-{
-name = top_;
-pos = (93,-49);
-},
-{
-name = top__;
-pos = (93,-49);
-},
-{
-name = top___;
-pos = (95,152);
+pos = (95,121);
 }
 );
 hints = (
@@ -9584,12 +7844,13 @@ unicode = 1807;
 },
 {
 glyphname = uni0730;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (-2,218);
 }
 );
 hints = (
@@ -9642,11 +7903,13 @@ unicode = 1840;
 },
 {
 glyphname = uni0731;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (2,53);
 }
 );
 hints = (
@@ -9692,8 +7955,17 @@ unicode = 1841;
 },
 {
 glyphname = uni0732;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:39:57 +0000";
 layers = (
 {
+anchors = (
+{
+name = _top;
+pos = (1,277);
+}
+);
 hints = (
 {
 horizontal = 1;
@@ -9734,12 +8006,13 @@ unicode = 1842;
 },
 {
 glyphname = uni0733;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (-2,216);
 }
 );
 hints = (
@@ -9816,11 +8089,13 @@ unicode = 1843;
 },
 {
 glyphname = uni0734;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (3,55);
 }
 );
 hints = (
@@ -9891,13 +8166,15 @@ unicode = 1844;
 },
 {
 glyphname = uni0735;
-lastChange = "2024-06-29 05:44:17 +0000";
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:39:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (36,307);
 }
 );
 hints = (
@@ -9916,23 +8193,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(30,378,l),
-(5,378,l),
-(5,327,l),
-(30,327,l)
+(61,378,l),
+(36,378,l),
+(36,327,l),
+(61,327,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(-5,404,l),
-(-30,404,l),
-(-30,353,l),
-(-5,353,l)
+(26,404,l),
+(1,404,l),
+(1,353,l),
+(26,353,l)
 );
 }
 );
-width = 0;
+width = 62;
 }
 );
 note = uni0735;
@@ -9940,12 +8217,13 @@ unicode = 1845;
 },
 {
 glyphname = uni0736;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (-2,220);
 }
 );
 hints = (
@@ -10002,11 +8280,13 @@ unicode = 1846;
 },
 {
 glyphname = uni0737;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (3,51);
 }
 );
 hints = (
@@ -10071,11 +8351,15 @@ unicode = 1847;
 },
 {
 glyphname = uni0738;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:39:57 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (33,13);
 }
 );
 hints = (
@@ -10094,23 +8378,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-7,-7,l),
-(-32,-7,l),
-(-32,-58,l),
-(-7,-58,l)
+(26,-7,l),
+(1,-7,l),
+(1,-58,l),
+(26,-58,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(32,-7,l),
-(7,-7,l),
-(7,-58,l),
-(32,-58,l)
+(65,-7,l),
+(40,-7,l),
+(40,-58,l),
+(65,-58,l)
 );
 }
 );
-width = 0;
+width = 66;
 }
 );
 note = uni0738;
@@ -10118,11 +8402,15 @@ unicode = 1848;
 },
 {
 glyphname = uni0739;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:41:59 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (31,16);
 }
 );
 hints = (
@@ -10141,23 +8429,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-5,-81,l),
-(-5,-30,l),
-(-30,-30,l),
-(-30,-81,l)
+(26,-81,l),
+(26,-30,l),
+(1,-30,l),
+(1,-81,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(30,-55,l),
-(30,-4,l),
-(5,-4,l),
-(5,-55,l)
+(61,-55,l),
+(61,-4,l),
+(36,-4,l),
+(36,-55,l)
 );
 }
 );
-width = 0;
+width = 62;
 }
 );
 note = uni0739;
@@ -10165,12 +8453,13 @@ unicode = 1849;
 },
 {
 glyphname = uni073A;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (-2,217);
 }
 );
 hints = (
@@ -10219,11 +8508,13 @@ unicode = 1850;
 },
 {
 glyphname = uni073B;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (2,55);
 }
 );
 hints = (
@@ -10266,11 +8557,15 @@ unicode = 1851;
 },
 {
 glyphname = uni073C;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:39:57 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (14,10);
 }
 );
 hints = (
@@ -10289,14 +8584,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(13,-10,l),
-(-12,-10,l),
-(-12,-61,l),
-(13,-61,l)
+(26,-10,l),
+(1,-10,l),
+(1,-61,l),
+(26,-61,l)
 );
 }
 );
-width = 0;
+width = 27;
 }
 );
 note = uni073C;
@@ -10304,12 +8599,13 @@ unicode = 1852;
 },
 {
 glyphname = uni073D;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (0,221);
 }
 );
 hints = (
@@ -10364,11 +8660,13 @@ unicode = 1853;
 },
 {
 glyphname = uni073E;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (0,50);
 }
 );
 hints = (
@@ -10423,12 +8721,15 @@ unicode = 1854;
 },
 {
 glyphname = uni073F;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:39:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (14,257);
 }
 );
 hints = (
@@ -10447,14 +8748,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(13,334,l),
-(-12,334,l),
-(-12,283,l),
-(13,283,l)
+(26,334,l),
+(1,334,l),
+(1,283,l),
+(26,283,l)
 );
 }
 );
-width = 0;
+width = 27;
 }
 );
 note = uni073F;
@@ -10462,12 +8763,13 @@ unicode = 1855;
 },
 {
 glyphname = uni0740;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (-174,118);
 }
 );
 hints = (
@@ -10509,12 +8811,13 @@ unicode = 1856;
 },
 {
 glyphname = uni0741;
+lastChange = "2024-06-30 05:43:08 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (27,333);
 }
 );
 hints = (
@@ -10533,22 +8836,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-29,284,o),
-(-22,279,o),
-(-13,279,cs),
-(-5,279,o),
-(2,284,o),
-(2,297,cs),
-(2,309,o),
-(-5,314,o),
-(-13,314,cs),
-(-22,314,o),
-(-29,309,o),
-(-29,297,cs)
+(52,404,l),
+(1,404,l),
+(1,353,l),
+(52,353,l)
 );
 }
 );
-width = 0;
+width = 53;
 }
 );
 note = uni0741;
@@ -10556,11 +8851,15 @@ unicode = 1857;
 },
 {
 glyphname = uni0742;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:41:30 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
+pos = (26,3);
 }
 );
 hints = (
@@ -10579,14 +8878,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(25,-18,l),
-(-26,-18,l),
-(-26,-69,l),
-(25,-69,l)
+(52,-18,l),
+(1,-18,l),
+(1,-69,l),
+(52,-69,l)
 );
 }
 );
-width = 0;
+width = 53;
 }
 );
 note = uni0742;
@@ -10594,12 +8893,13 @@ unicode = 1858;
 },
 {
 glyphname = uni0743;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (0,221);
 }
 );
 hints = (
@@ -10663,11 +8963,13 @@ unicode = 1859;
 },
 {
 glyphname = uni0744;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (0,50);
 }
 );
 hints = (
@@ -10731,12 +9033,13 @@ unicode = 1860;
 },
 {
 glyphname = uni0745;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (0,221);
 }
 );
 hints = (
@@ -10825,11 +9128,13 @@ unicode = 1861;
 },
 {
 glyphname = uni0746;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (0,50);
 }
 );
 hints = (
@@ -10918,12 +9223,17 @@ unicode = 1862;
 },
 {
 glyphname = uni0747;
+lastChange = "2024-06-30 07:51:50 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (73,248);
+},
+{
+name = top;
+pos = (73,345);
 }
 );
 hints = (
@@ -10943,14 +9253,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(70,298,l),
-(70,323,l),
-(-74,323,l),
-(-74,298,l)
+(145,298,l),
+(145,323,l),
+(1,323,l),
+(1,298,l)
 );
 }
 );
-width = 0;
+width = 146;
 }
 );
 note = uni0747;
@@ -10958,11 +9268,17 @@ unicode = 1863;
 },
 {
 glyphname = uni0748;
+lastChange = "2024-06-30 07:52:31 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (73,45);
+},
+{
+name = bottom;
+pos = (73,-50);
 }
 );
 hints = (
@@ -10982,14 +9298,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(70,-30,l),
-(70,-5,l),
-(-74,-5,l),
-(-74,-30,l)
+(145,-30,l),
+(145,-5,l),
+(1,-5,l),
+(1,-30,l)
 );
 }
 );
-width = 0;
+width = 146;
 }
 );
 note = uni0748;
@@ -10997,12 +9313,13 @@ unicode = 1864;
 },
 {
 glyphname = uni0749;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (1,221);
 }
 );
 hints = (
@@ -11089,12 +9406,13 @@ unicode = 1865;
 },
 {
 glyphname = uni074A;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (0,221);
 }
 );
 hints = (
@@ -11240,12 +9558,17 @@ unicode = 1866;
 },
 {
 glyphname = uni0303;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (1,277);
+},
+{
+name = top;
+pos = (1,315);
 }
 );
 hints = (
@@ -11315,12 +9638,17 @@ unicode = 771;
 },
 {
 glyphname = uni0304;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (1,277);
+},
+{
+name = top;
+pos = (1,298);
 }
 );
 hints = (
@@ -11354,12 +9682,17 @@ unicode = 772;
 },
 {
 glyphname = uni0307;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (1,277);
+},
+{
+name = top;
+pos = (1,329);
 }
 );
 hints = (
@@ -11401,12 +9734,19 @@ unicode = 775;
 },
 {
 glyphname = uni0308;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 07:50:00 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (119,266);
+},
+{
+name = top;
+pos = (119,418);
 }
 );
 hints = (
@@ -11429,23 +9769,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-16,398,l),
-(-117,398,l),
-(-117,297,l),
-(-16,297,l)
+(102,398,l),
+(1,398,l),
+(1,297,l),
+(102,297,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(119,398,l),
-(18,398,l),
-(18,297,l),
-(119,297,l)
+(237,398,l),
+(136,398,l),
+(136,297,l),
+(237,297,l)
 );
 }
 );
-width = 0;
+width = 238;
 }
 );
 note = uni0308;
@@ -11453,12 +9793,17 @@ unicode = 776;
 },
 {
 glyphname = uni030A;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (0,277);
+},
+{
+name = top;
+pos = (0,338);
 }
 );
 hints = (
@@ -11526,11 +9871,17 @@ unicode = 778;
 },
 {
 glyphname = uni0320;
+lastChange = "2024-06-30 07:53:28 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (65,20);
+},
+{
+name = bottom;
+pos = (65,-56);
 }
 );
 hints = (
@@ -11549,14 +9900,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(64,-26,l),
-(64,-4,l),
-(-63,-4,l),
-(-63,-26,l)
+(128,-26,l),
+(128,-4,l),
+(1,-4,l),
+(1,-26,l)
 );
 }
 );
-width = 0;
+width = 129;
 }
 );
 note = uni0320;
@@ -11564,11 +9915,17 @@ unicode = 800;
 },
 {
 glyphname = uni0323;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (1,0);
+},
+{
+name = bottom;
+pos = (1,-58);
 }
 );
 hints = (
@@ -11610,11 +9967,19 @@ unicode = 803;
 },
 {
 glyphname = uni0324;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 07:50:18 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (119,2);
+},
+{
+name = bottom;
+pos = (119,-150);
 }
 );
 hints = (
@@ -11637,23 +10002,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-17,-29,l),
-(-118,-29,l),
-(-118,-130,l),
-(-17,-130,l)
+(102,-29,l),
+(1,-29,l),
+(1,-130,l),
+(102,-130,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(118,-29,l),
-(17,-29,l),
-(17,-130,l),
-(118,-130,l)
+(237,-29,l),
+(136,-29,l),
+(136,-130,l),
+(237,-130,l)
 );
 }
 );
-width = 0;
+width = 238;
 }
 );
 note = uni0324;
@@ -11661,11 +10026,16 @@ unicode = 804;
 },
 {
 glyphname = uni0325;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
+},
+{
+name = bottom;
+pos = (0,-67);
 }
 );
 hints = (
@@ -11733,11 +10103,16 @@ unicode = 805;
 },
 {
 glyphname = uni032D;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+},
+{
+name = bottom;
+pos = (0,-50);
 }
 );
 hints = (
@@ -11781,11 +10156,17 @@ unicode = 813;
 },
 {
 glyphname = uni032E;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (1,0);
+},
+{
+name = bottom;
+pos = (1,-30);
 }
 );
 hints = (
@@ -11833,11 +10214,16 @@ unicode = 814;
 },
 {
 glyphname = uni0330;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+},
+{
+name = bottom;
+pos = (0,-44);
 }
 );
 hints = (
@@ -11902,11 +10288,17 @@ unicode = 816;
 },
 {
 glyphname = uni0331;
+lastChange = "2024-06-30 05:24:52 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (1,0);
+},
+{
+name = bottom;
+pos = (1,-26);
 }
 );
 hints = (
@@ -13728,12 +12120,15 @@ unicode = 9841;
 },
 {
 glyphname = uni0732.above;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:39:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (0,271);
+pos = (13,263);
 }
 );
 hints = (
@@ -13752,25 +12147,29 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(13,334,l),
-(-12,334,l),
-(-12,283,l),
-(13,283,l)
+(26,334,l),
+(1,334,l),
+(1,283,l),
+(26,283,l)
 );
 }
 );
-width = 0;
+width = 27;
 }
 );
 note = uni0732.above;
 },
 {
 glyphname = uni0732.below;
+kernLeft = "1";
+kernRight = "1";
+lastChange = "2024-06-30 05:39:57 +0000";
 layers = (
 {
 anchors = (
 {
-name = _top;
+name = _bottom;
+pos = (13,16);
 }
 );
 hints = (
@@ -13789,14 +12188,14 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(12,-4,l),
-(-13,-4,l),
-(-13,-55,l),
-(12,-55,l)
+(26,-4,l),
+(1,-4,l),
+(1,-55,l),
+(26,-55,l)
 );
 }
 );
-width = 0;
+width = 27;
 }
 );
 note = uni0732.below;
@@ -13967,8 +12366,31 @@ note = SAMline;
 },
 {
 glyphname = uni07200710.fina;
+lastChange = "2024-06-30 07:46:22 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom_1;
+pos = (506,-20);
+},
+{
+name = bottom_2;
+pos = (253,-20);
+},
+{
+name = caret_1;
+pos = (328.5,0);
+},
+{
+name = top_1;
+pos = (506,525);
+},
+{
+name = top_2;
+pos = (253,323);
+}
+);
 hints = (
 {
 horizontal = 1;
@@ -14033,8 +12455,31 @@ note = uni07200710.fina;
 },
 {
 glyphname = uni072C0710.fina;
+lastChange = "2024-06-30 07:46:12 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom_1;
+pos = (492,-20);
+},
+{
+name = bottom_2;
+pos = (253,-20);
+},
+{
+name = caret_1;
+pos = (397,0);
+},
+{
+name = top_1;
+pos = (492,525);
+},
+{
+name = top_2;
+pos = (253,323);
+}
+);
 hints = (
 {
 horizontal = 1;
@@ -14096,8 +12541,31 @@ note = uni072C0710.fina;
 },
 {
 glyphname = uni07200710.isol;
+lastChange = "2024-06-30 07:46:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom_1;
+pos = (505,-20);
+},
+{
+name = bottom_2;
+pos = (247,-20);
+},
+{
+name = caret_1;
+pos = (329,0);
+},
+{
+name = top_1;
+pos = (505,525);
+},
+{
+name = top_2;
+pos = (247,322);
+}
+);
 hints = (
 {
 horizontal = 1;
@@ -14160,8 +12628,31 @@ note = uni07200710.isol;
 },
 {
 glyphname = uni072C0710.isol;
+lastChange = "2024-06-30 07:45:53 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom_1;
+pos = (492,-20);
+},
+{
+name = bottom_2;
+pos = (238,-20);
+},
+{
+name = caret_1;
+pos = (372,0);
+},
+{
+name = top_1;
+pos = (492,525);
+},
+{
+name = top_2;
+pos = (238,323);
+}
+);
 hints = (
 {
 horizontal = 1;
@@ -14292,25 +12783,17 @@ unicode = 7672;
 },
 {
 glyphname = uni072A0308.fina;
-lastChange = "2024-06-28 08:24:46 +0000";
+lastChange = "2024-06-30 06:51:23 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (98,-36);
-},
-{
-name = top_;
-pos = (98,-36);
-},
-{
-name = top__;
-pos = (98,-36);
-},
-{
-name = top___;
-pos = (96,341);
+pos = (203,323);
 }
 );
 hints = (
@@ -14387,25 +12870,17 @@ note = uni072Auni0308.fina;
 },
 {
 glyphname = uni072A0308.isol;
-lastChange = "2024-06-28 08:24:51 +0000";
+lastChange = "2024-06-30 06:50:35 +0000";
 layers = (
 {
 anchors = (
 {
+name = bottom;
+pos = (203,-20);
+},
+{
 name = top;
-pos = (102,-36);
-},
-{
-name = top_;
-pos = (102,-36);
-},
-{
-name = top__;
-pos = (102,-36);
-},
-{
-name = top___;
-pos = (99,341);
+pos = (203,323);
 }
 );
 hints = (
