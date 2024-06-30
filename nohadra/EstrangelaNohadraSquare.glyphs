@@ -105,7 +105,9 @@ DisplayStrings = (
 "/uni072C0710.fina",
 "݇",
 "݈",
-"̠"
+"̠",
+"݊",
+" "
 );
 customParameters = (
 {
@@ -573,8 +575,34 @@ language dflt;
 
 lookupflag RightToLeft IgnoreMarks;
 # Lammad-Allap
-sub uni0720.medi uni0710.fina by uni07200710.fina;
+sub uni0720.init uni0710 by uni07200710.isol;
+sub uni0720.init uni0710 by uni07200710.isol;
+sub uni0720.init uni0710 by uni07200710.isol;
+
+sub uni0720.init uni0710.med2 by uni07200710.isol;
+sub uni0720.init uni0710.med2 by uni07200710.isol;
+sub uni0720.init uni0710.med2 by uni07200710.isol;
+
 sub uni0720.init uni0710.fina by uni07200710.isol;
+sub uni0720.init uni0710.fina by uni07200710.isol;
+sub uni0720.init uni0710.fina by uni07200710.isol;
+
+sub uni0720.init uni0710.fin2 by uni07200710.isol;
+sub uni0720.init uni0710.fin2 by uni07200710.isol;
+sub uni0720.init uni0710.fin2 by uni07200710.isol;
+
+sub uni0720.medi uni0710.fin3 by uni07200710.fina;
+sub uni0720.medi uni0710.fin3 by uni07200710.fina;
+sub uni0720.medi uni0710.fin3 by uni07200710.fina;
+
+sub uni0720.medi uni0710.med2 by uni07200710.isol;
+sub uni0720.medi uni0710.med2 by uni07200710.isol;
+sub uni0720.medi uni0710.med2 by uni07200710.isol;
+
+sub uni0720.medi uni0710 by uni07200710.fina;
+sub uni0720.medi uni0710 by uni07200710.fina;
+sub uni0720.medi uni0710 by uni07200710.fina;
+
 # Taw-Allap
 sub uni072C uni0710.fina by uni072C0710.isol;
 #sub uni072C uni0710.fin2 by uni072C0710.isol;
