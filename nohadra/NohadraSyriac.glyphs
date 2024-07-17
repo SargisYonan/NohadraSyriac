@@ -494,13 +494,13 @@ sub uni0720.medi uni0710 by uni07200710.fina;
 
 # Taw-Allap
 sub uni072C uni0710.fina by uni072C0710.isol;
-#sub uni072C uni0710.fin2 by uni072C0710.isol;
-#sub uni072C uni0710.fin3 by uni072C0710.isol;
+sub uni072C uni0710.fin2 by uni072C0710.isol;
+sub uni072C uni0710.fin3 by uni072C0710.isol;
 sub uni072C uni0710 by uni072C0710.isol;
-sub uni072C.fina uni0710.fina by uni072C0710.isol;
+#sub uni072C.fina uni0710.fina by uni072C0710.isol;
 #sub uni072C.fina uni0710.fin2 by uni072C0710.isol;
 #sub uni072C.fina uni0710.fin3 by uni072C0710.isol;
-sub uni072C.fina uni0710 by uni072C0710.isol;
+#sub uni072C.fina uni0710 by uni072C0710.isol;
 ";
 tag = liga;
 },
@@ -535,6 +535,7 @@ lookup SUB_5 {
 	sub uni072A by uni072A.fina;
 	sub uni072B by uni072B.fina;
 	sub uni072C by uni072C.fina;
+	sub uni072C0710.isol by uni072C0710.fina;
 } SUB_5;
 script syrc;
 language dflt;
@@ -546,11 +547,6 @@ tag = fina;
 automatic = 1;
 code = "";
 tag = kern;
-},
-{
-code = "@mark = [uni1DF8 uni1DFA];
-GlyphClassDef @base, , @mark, ;";
-tag = GDEF;
 }
 );
 fontMaster = (
@@ -558,11 +554,11 @@ fontMaster = (
 customParameters = (
 {
 name = typoAscender;
-value = 463;
+value = 900;
 },
 {
 name = typoDescender;
-value = -243;
+value = -300;
 },
 {
 name = typoLineGap;

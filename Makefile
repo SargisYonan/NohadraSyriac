@@ -48,6 +48,7 @@ test: venv move
 	for file in $(FONTS_DIR)/*.otf; do \
 		if [ -f "$$file" ]; then \
 			fontbakery check-opentype $$file; \
+			fontbakery check-universal $$file; \
 		fi; \
 	done
 
