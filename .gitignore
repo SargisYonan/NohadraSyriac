@@ -1,2 +1,6 @@
 .DS_Store
 venv
+nohadra/*.ttf
+nohadra/*.otf
+nohadra/*.woff
+nohadra/*.woff2
