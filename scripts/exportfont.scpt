@@ -4,7 +4,10 @@ on run argv
     tell application "Glyphs 3"
         activate
         open filePath
-        -- delay 1 -- give Glyphs some time to open the file
+    end tell
+
+	tell application "System Events"
+        keystroke "s" using {command down}
     end tell
 
     tell application "System Events"
