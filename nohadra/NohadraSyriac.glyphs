@@ -2,7 +2,12 @@
 .appVersion = "3260";
 .formatVersion = 3;
 DisplayStrings = (
-"ܵ"
+"ܵ",
+"ܸ",
+"ܠ",
+"ܹ",
+"ܶ",
+"݇"
 );
 customParameters = (
 {
@@ -7931,13 +7936,13 @@ unicode = 1844;
 glyphname = uni0735;
 kernLeft = "1";
 kernRight = "1";
-lastChange = "2024-07-11 06:12:02 +0000";
+lastChange = "2024-07-17 08:46:15 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
-pos = (36,307);
+pos = (51,307);
 }
 );
 hints = (
@@ -7956,23 +7961,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(61,378,l),
-(36,378,l),
-(36,327,l),
-(61,327,l)
+(101,378,l),
+(76,378,l),
+(76,327,l),
+(101,327,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(26,404,l),
-(1,404,l),
-(1,353,l),
-(26,353,l)
+(25,404,l),
+(0,404,l),
+(0,353,l),
+(25,353,l)
 );
 }
 );
-width = 62;
+width = 101;
 }
 );
 note = uni0735;
@@ -7980,7 +7985,7 @@ unicode = 1845;
 },
 {
 glyphname = uni0736;
-lastChange = "2024-07-11 05:52:24 +0000";
+lastChange = "2024-07-17 08:48:30 +0000";
 layers = (
 {
 anchors = (
@@ -8084,13 +8089,13 @@ unicode = 1847;
 glyphname = uni0738;
 kernLeft = "1";
 kernRight = "1";
-lastChange = "2024-06-30 05:39:57 +0000";
+lastChange = "2024-07-17 08:47:02 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
-pos = (33,13);
+pos = (51,13);
 }
 );
 hints = (
@@ -8109,23 +8114,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(26,-7,l),
-(1,-7,l),
-(1,-58,l),
-(26,-58,l)
+(25,-7,l),
+(0,-7,l),
+(0,-58,l),
+(25,-58,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(65,-7,l),
-(40,-7,l),
-(40,-58,l),
-(65,-58,l)
+(101,-7,l),
+(76,-7,l),
+(76,-58,l),
+(101,-58,l)
 );
 }
 );
-width = 66;
+width = 101;
 }
 );
 note = uni0738;
@@ -8135,13 +8140,13 @@ unicode = 1848;
 glyphname = uni0739;
 kernLeft = "1";
 kernRight = "1";
-lastChange = "2024-06-30 05:41:59 +0000";
+lastChange = "2024-07-17 08:47:27 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
-pos = (31,16);
+pos = (51,16);
 }
 );
 hints = (
@@ -8160,23 +8165,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(26,-81,l),
-(26,-30,l),
-(1,-30,l),
-(1,-81,l)
+(25,-81,l),
+(25,-30,l),
+(0,-30,l),
+(0,-81,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(61,-55,l),
-(61,-4,l),
-(36,-4,l),
-(36,-55,l)
+(101,-55,l),
+(101,-4,l),
+(76,-4,l),
+(76,-55,l)
 );
 }
 );
-width = 62;
+width = 101;
 }
 );
 note = uni0739;
