@@ -1,5 +1,4 @@
 OUTPUT_DIRS:=nohadra
-OUTPUT_NAMES:=EstrangelaNohadraSquare
 FONT_EXTENSIONS:=otf ttf woff woff2
 FONTS_DIR:=fonts
 
@@ -48,7 +47,7 @@ test: venv move
 	. venv/bin/activate; \
 	for file in $(FONTS_DIR)/*.otf; do \
 		if [ -f "$$file" ]; then \
-			fontbakery check-notofonts $$file; \
+			fontbakery check-opentype $$file; \
 		fi; \
 	done
 

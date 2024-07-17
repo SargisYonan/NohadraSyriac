@@ -8,6 +8,7 @@ on run argv
 
 	tell application "System Events"
         keystroke "s" using {command down}
+        -- delay 1 -- give Glyphs some time to open the file
     end tell
 
     tell application "System Events"
@@ -15,4 +16,7 @@ on run argv
         -- delay 1 -- give Glyphs some time to open the file
         key code 36
     end tell
+
+    delay 1
+    
 end run
