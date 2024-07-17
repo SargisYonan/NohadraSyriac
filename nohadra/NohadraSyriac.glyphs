@@ -630,7 +630,7 @@ over = -8;
 pos = -221;
 }
 );
-name = Regular;
+name = Estrangela;
 userData = {
 GSCornerRadius = 100;
 GSExtrudeAngle = 30;
@@ -12431,18 +12431,18 @@ instances = (
 instanceInterpolations = {
 m01 = 1;
 };
-name = Regular;
+name = Estrangela;
 properties = (
 {
 key = postscriptFontName;
-value = NohadraSyriacSquareEstrangela;
+value = NohadraSyriacSquare;
 },
 {
 key = postscriptFullNames;
 values = (
 {
 language = ENG;
-value = "Nohadra Syriac Square - Estrangela";
+value = "Nohadra Syriac Square";
 }
 );
 }
