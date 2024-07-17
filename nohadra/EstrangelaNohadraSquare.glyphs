@@ -249,7 +249,7 @@ uni1DF8
 }
 );
 date = "2024-06-25 06:59:15 +0000";
-familyName = "Estrangela Nohadra Square";
+familyName = NohadraSquare;
 featurePrefixes = (
 {
 code = "lookup POS_0 {
@@ -12585,7 +12585,7 @@ key = copyrights;
 values = (
 {
 language = ENG;
-value = "Copyright 2024 Sargis Yonan ܣܪܓܝܣ ܝܘܢܢ (https://www.yonan.org)";
+value = "Copyright 2024 Sargis Yonan (yonan.org)";
 }
 );
 },
@@ -12594,7 +12594,7 @@ key = descriptions;
 values = (
 {
 language = ENG;
-value = "A square monospaced Syriac script";
+value = "The Nohadra Font Collection";
 }
 );
 },
