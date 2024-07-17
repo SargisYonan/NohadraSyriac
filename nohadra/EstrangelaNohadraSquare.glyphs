@@ -468,8 +468,6 @@ tag = mark;
 code = "script syrc;
 language dflt;
 
-#comment
-
 lookupflag RightToLeft IgnoreMarks;
 # Lammad-Allap
 sub uni0720.init uni0710.fina by uni07200710.isol;
