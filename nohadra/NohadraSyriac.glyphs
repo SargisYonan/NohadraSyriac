@@ -12431,7 +12431,7 @@ instances = (
 instanceInterpolations = {
 m01 = 1;
 };
-name = Estrangela;
+name = "Square Estrangela";
 properties = (
 {
 key = postscriptFontName;
@@ -12442,7 +12442,7 @@ key = postscriptFullNames;
 values = (
 {
 language = ENG;
-value = "Nohadra Syriac Square";
+value = "Nohadra Syriac Square Estrangela";
 }
 );
 }
