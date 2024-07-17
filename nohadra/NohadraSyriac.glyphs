@@ -319,9 +319,9 @@ feature salt;
 feature ss01;
 feature ss02;
 feature stch;
-feature fina;
 feature fin2;
 feature fin3;
+feature fina;
 ";
 tag = aalt;
 },
@@ -461,6 +461,18 @@ tag = stch;
 },
 {
 automatic = 1;
+code = "sub uni0710 by uni0710.fin2;
+";
+tag = fin2;
+},
+{
+automatic = 1;
+code = "sub uni0710 by uni0710.fin3;
+";
+tag = fin3;
+},
+{
+automatic = 1;
 code = "";
 tag = mark;
 },
@@ -532,20 +544,13 @@ tag = fina;
 },
 {
 automatic = 1;
-code = "sub uni0710 by uni0710.fin2;
-";
-tag = fin2;
-},
-{
-automatic = 1;
-code = "sub uni0710 by uni0710.fin3;
-";
-tag = fin3;
-},
-{
-automatic = 1;
 code = "";
 tag = kern;
+},
+{
+code = "@mark = [uni1DF8 uni1DFA];
+GlyphClassDef @base, , @mark, ;";
+tag = GDEF;
 }
 );
 fontMaster = (
@@ -12182,7 +12187,9 @@ width = 744;
 note = uni072C0710.isol;
 },
 {
+category = Mark;
 glyphname = uni1DFA;
+lastChange = "2024-07-17 08:07:16 +0000";
 layers = (
 {
 hints = (
@@ -12220,10 +12227,13 @@ width = 0;
 }
 );
 note = uni1DFA;
+subCategory = Nonspacing;
 unicode = 7674;
 },
 {
+category = Mark;
 glyphname = uni1DF8;
+lastChange = "2024-07-17 08:07:16 +0000";
 layers = (
 {
 layerId = m01;
@@ -12250,6 +12260,7 @@ width = 0;
 }
 );
 note = uni1DF8;
+subCategory = Nonspacing;
 unicode = 7672;
 },
 {
