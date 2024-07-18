@@ -38,10 +38,13 @@ build:
 
 install: move
 	for file in $(FONTS_DIR)/*.otf; do \
-		if [ -f "$$file" ]; then \
-			cp $$file ~/Library/Fonts/; \
+		filename=$$(basename "$$file"); \
+		if [ -f "~/Library/Fonts/$$filename" ]; then \
+			rm -f "~/Library/Fonts/$$filename"; \
 		fi; \
+		cp "$$file" ~/Library/Fonts/; \
 	done
+
 
 test: venv move
 	. venv/bin/activate; \
