@@ -619,6 +619,10 @@ value = -175;
 {
 name = hheaLineGap;
 value = 0;
+},
+{
+name = "Master Icon Glyph Name";
+value = uni0710;
 }
 );
 iconName = Extended;
