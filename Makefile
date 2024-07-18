@@ -21,7 +21,7 @@ open:
 	done
 
 move: 
-	@for ext in $(FONT_EXTENSIONS); do \
+	for ext in $(FONT_EXTENSIONS); do \
 		for file in $(OUTPUT_DIRS)/*.$$ext; do \
 			if [ -f "$$file" ]; then \
 				mv $$file fonts/; \
