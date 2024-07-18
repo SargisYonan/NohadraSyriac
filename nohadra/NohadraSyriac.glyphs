@@ -25,7 +25,8 @@ DisplayStrings = (
 "̃",
 "̰",
 "̱",
-"̄"
+"̄",
+""
 );
 customParameters = (
 {
@@ -12533,8 +12534,8 @@ width = 405;
 unicode = 48;
 },
 {
-glyphname = "1";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = one;
+lastChange = "2024-07-18 08:04:34 +0000";
 layers = (
 {
 layerId = m01;
@@ -12557,8 +12558,8 @@ width = 240;
 unicode = 49;
 },
 {
-glyphname = "2";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = two;
+lastChange = "2024-07-18 08:04:36 +0000";
 layers = (
 {
 layerId = m01;
@@ -12587,8 +12588,8 @@ width = 405;
 unicode = 50;
 },
 {
-glyphname = "3";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = three;
+lastChange = "2024-07-18 08:05:17 +0000";
 layers = (
 {
 layerId = m01;
@@ -12617,8 +12618,8 @@ width = 405;
 unicode = 51;
 },
 {
-glyphname = "4";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = four;
+lastChange = "2024-07-18 08:04:53 +0000";
 layers = (
 {
 layerId = m01;
@@ -12645,8 +12646,8 @@ width = 405;
 unicode = 52;
 },
 {
-glyphname = "5";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = five;
+lastChange = "2024-07-18 08:04:56 +0000";
 layers = (
 {
 layerId = m01;
@@ -12675,8 +12676,8 @@ width = 405;
 unicode = 53;
 },
 {
-glyphname = "6";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = six;
+lastChange = "2024-07-18 08:04:58 +0000";
 layers = (
 {
 layerId = m01;
@@ -12710,8 +12711,8 @@ width = 405;
 unicode = 54;
 },
 {
-glyphname = "7";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = seven;
+lastChange = "2024-07-18 08:05:01 +0000";
 layers = (
 {
 layerId = m01;
@@ -12734,8 +12735,8 @@ width = 405;
 unicode = 55;
 },
 {
-glyphname = "8";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = eight;
+lastChange = "2024-07-18 08:05:04 +0000";
 layers = (
 {
 layerId = m01;
@@ -12774,8 +12775,8 @@ width = 405;
 unicode = 56;
 },
 {
-glyphname = "9";
-lastChange = "2024-07-18 07:53:55 +0000";
+glyphname = nine;
+lastChange = "2024-07-18 08:05:06 +0000";
 layers = (
 {
 layerId = m01;
