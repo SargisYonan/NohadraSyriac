@@ -10,7 +10,7 @@ The Nohadra Syriac Font family includes bold, geometric, and modern monospaces S
 
 ![Nohadra - Sapna](samples/NohadraSyriac-Sapna.png)
 Sapna is a monospaced and minimal block style Syriac typeface.
-![Nohadra - Amedia](samples//NohadraSyriac-Sapna.png)
+![Nohadra - Amedia](samples//NohadraSyriac-Amedia.png)
 Amedia offers the same look and feel as Sapna, but with rounder edges.
 
 ## Installation
