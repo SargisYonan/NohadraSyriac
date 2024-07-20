@@ -1,1 +1,3 @@
 fontbakery
+arabic-reshaper
+python-bidi

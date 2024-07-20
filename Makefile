@@ -1,14 +1,17 @@
-OUTPUT_DIRS:=nohadra
-FONT_EXTENSIONS:=otf ttf woff woff2
-FONTS_DIR:=fonts
+OUTPUT_DIRS := nohadra
+FONT_EXTENSIONS := otf ttf woff woff2
+FONTS_DIR := fonts
 
 GLYPH_FILES := $(foreach dir, $(OUTPUT_DIRS), $(shell find $(dir) -name '*.glyphs' | grep -v ' (Autosaved).glyphs'))
 
-all: build move install test
+SAMPLE_DIR := samples
+SAMPLE_TEXT := "ܥܠ ܐܪܥܐ ܫܠܡܐ ܘܣܒܪܐ ܛܒܐ ܠܒܪܢܫ̈ܐ"
+
+all: build move install test generate-png
 
 venv/created: requirements.txt
 	python3 -m venv venv
-	. venv/bin/activate; pip3 install -Ur requirements.txt
+	. venv/bin/activate; pip install -Ur requirements.txt
 	touch venv/created
 
 venv: venv/created
@@ -16,16 +19,17 @@ venv: venv/created
 open:
 	for file in $(GLYPH_FILES); do \
 		if [ -f "$$file" ]; then \
-			open -a /Applications/Glyphs\ 3.app $$file; \
+			open -a /Applications/Glyphs\ 3.app "$$file"; \
 		fi \
 	done
 
 move:
+	mkdir -p $(FONTS_DIR)
 	for ext in $(FONT_EXTENSIONS); do \
 		for dir in $(OUTPUT_DIRS); do \
 			for file in $$dir/*.$$ext; do \
 				if [ -f "$$file" ]; then \
-					mv "$$file" fonts/; \
+					mv "$$file" $(FONTS_DIR)/; \
 				fi; \
 			done; \
 		done; \
@@ -39,14 +43,13 @@ build:
 	done
 
 install: move
-	for file in $(FONTS_DIR)/*.otf; do \
+	@for file in $(FONTS_DIR)/*.otf; do \
 		filename=$$(basename "$$file"); \
-		if [ -f "~/Library/Fonts/$$filename" ]; then \
-			rm -f "~/Library/Fonts/$$filename"; \
+		if [ -f "$$HOME/Library/Fonts/$$filename" ]; then \
+			rm -f "$$HOME/Library/Fonts/$$filename"; \
 		fi; \
-		cp "$$file" ~/Library/Fonts/; \
+		cp "$$file" $$HOME/Library/Fonts/; \
 	done
-
 
 test: venv move
 	. venv/bin/activate; \
@@ -66,4 +69,17 @@ clean:
 		done; \
 	done; \
 	rm -rf venv; \
-	rm fonts/*
+	rm -rf $(FONTS_DIR)
+	rm -rf samples/*
+
+# Target to generate PNG with Syriac sample text using Python
+generate-png: move venv
+	@for file in $(FONTS_DIR)/*.otf; do \
+		if [ -f "$$file" ]; then \
+			font=$$(basename "$$file" .otf); \
+			python3 scripts/render_text.py "$$file" '$(SAMPLE_TEXT)' "$(SAMPLE_DIR)/$$font.png"; \
+			echo "Generated PNG with Syriac sample text using font: $$file"; \
+		fi; \
+	done
+
+.PHONY: clean test install build move open venv all generate-svg generate-png
