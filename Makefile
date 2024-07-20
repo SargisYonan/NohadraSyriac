@@ -43,7 +43,7 @@ build:
 	done
 
 install: move
-	./installfonts.command
+	./install.command
 
 test: venv move
 	. venv/bin/activate; \
