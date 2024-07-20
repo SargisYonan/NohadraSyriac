@@ -2,6 +2,11 @@ import sys
 import arabic_reshaper
 from bidi.algorithm import get_display
 from PIL import Image, ImageDraw, ImageFont
+import unicodedata
+
+def clean_text(text):
+    # Normalize the text to remove unwanted characters
+    return ''.join(c for c in text if unicodedata.category(c).startswith('L') or c.isspace())
 
 def render_text_to_image(font_path, text, output_path):
     width, height = 5000, 500
@@ -10,7 +15,7 @@ def render_text_to_image(font_path, text, output_path):
     image = Image.new('RGB', (width, height), color='white')
 
     # Prepare the text for rendering
-    reshaped_text = arabic_reshaper.reshape(text.strip())
+    reshaped_text = arabic_reshaper.reshape(clean_text(text))
     
     # Load the font
     font_size = 400
