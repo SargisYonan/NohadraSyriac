@@ -1,0 +1,29 @@
+name: Font Bakery QA Tests
+
+on: [push, pull_request]
+
+jobs:
+  fontbakery:
+    runs-on: ubuntu-latest
+    name: Font Bakery QA tests  # Customize to edit the string in your GitHub CI UI
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v3
+      - name: Set up Python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"  # supports any Py3.6+ version available in Actions
+      - name: fontbakery OTF checks - Sapna
+        uses: f-actions/font-bakery@v3
+        with:
+          subcmd: "check-universal"  # fontbakery sub-command
+          args: "--loglevel WARN"  # optional, arguments to fontbakery
+          path: "fonts/NohadraSyriac-Sapna.otf"  # font path relative to root of repository
+          version: "latest" 
+      - name: fontbakery OTF checks - Amedia
+        uses: f-actions/font-bakery@v3
+        with:
+          subcmd: "check-universal"  # fontbakery sub-command
+          args: "--loglevel WARN"  # optional, arguments to fontbakery
+          path: "fonts/NohadraSyriac-Amedia.otf"  # font path relative to root of repository
+          version: "latest" 
