@@ -20,12 +20,16 @@ Amedia offers the same look and feel as Sapna, but with rounder edges.
 
 ## Installation
 
+## macOS Instructions
 To install the Nohadra Syriac Fonts onto your system, follow these steps:
 
 1. Download or clone this repository
 3. Run the `install.command` script
 
 The `install.command` script will automatically copy the font files to your system's fonts directory.
+
+## Other OSes
+Copy the `.otf` fonts in the `fonts/` directory into your system fonts location.
 
 ## Contributing
 
