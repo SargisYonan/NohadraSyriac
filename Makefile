@@ -7,7 +7,7 @@ GLYPH_FILES := $(foreach dir, $(OUTPUT_DIRS), $(shell find $(dir) -name '*.glyph
 SAMPLE_DIR := samples
 SAMPLE_TEXT := "ܥܠ ܐܪܥܐ ܫܠܡܐ ܘܣܒܪܐ ܛܒܐ ܠܒܪܢܫ̈ܐ"
 
-all: build move install test generate-png
+all: build move generate-png install test
 
 venv/created: requirements.txt
 	python3 -m venv venv
@@ -43,13 +43,7 @@ build:
 	done
 
 install: move
-	@for file in $(FONTS_DIR)/*.otf; do \
-		filename=$$(basename "$$file"); \
-		if [ -f "$$HOME/Library/Fonts/$$filename" ]; then \
-			rm -f "$$HOME/Library/Fonts/$$filename"; \
-		fi; \
-		cp "$$file" $$HOME/Library/Fonts/; \
-	done
+	./installfonts.command
 
 test: venv move
 	. venv/bin/activate; \
