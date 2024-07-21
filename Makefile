@@ -31,7 +31,7 @@ build:
 	done
 
 install: build
-	./install.command
+	./install_mac.command
 
 test: venv
 	. venv/bin/activate; \
