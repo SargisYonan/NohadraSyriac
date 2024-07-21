@@ -1,3 +1,4 @@
 fontbakery
 arabic-reshaper
-python-bidi
+python-bidi==0.4.2
+Pillow

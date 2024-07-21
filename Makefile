@@ -7,7 +7,7 @@ GLYPH_FILES := $(foreach dir, $(OUTPUT_DIRS), $(shell find $(dir) -name '*.glyph
 SAMPLE_DIR := samples
 SAMPLE_TEXT := "ܥܠ ܐܪܥܐ ܫܠܡܐ ܘܣܒܪܐ ܛܒܐ ܠܒܪܢܫ̈ܐ"
 
-all: build move generate-png install test
+all: build generate-png install test
 
 venv/created: requirements.txt
 	python3 -m venv venv
@@ -23,18 +23,6 @@ open:
 		fi \
 	done
 
-move:
-	mkdir -p $(FONTS_DIR)
-	for ext in $(FONT_EXTENSIONS); do \
-		for dir in $(OUTPUT_DIRS); do \
-			for file in $$dir/*.$$ext; do \
-				if [ -f "$$file" ]; then \
-					mv "$$file" $(FONTS_DIR)/; \
-				fi; \
-			done; \
-		done; \
-	done
-
 build:
 	for file in $(GLYPH_FILES); do \
 		if [ -f "$$file" ]; then \
@@ -42,10 +30,10 @@ build:
 		fi \
 	done
 
-install: move
+install: build
 	./install.command
 
-test: venv move
+test: venv
 	. venv/bin/activate; \
 	for file in $(FONTS_DIR)/*.otf; do \
 		if [ -f "$$file" ]; then \
@@ -63,17 +51,15 @@ clean:
 		done; \
 	done; \
 	rm -rf venv; \
-	rm -rf $(FONTS_DIR)
+	rm -rf $(FONTS_DIR)/*
 	rm -rf samples/*
 
 # Target to generate PNG with Syriac sample text using Python
-generate-png: move venv
-	@for file in $(FONTS_DIR)/*.otf; do \
-		if [ -f "$$file" ]; then \
+generate-png: venv
+	. venv/bin/activate && \
+	for file in $(FONTS_DIR)/*.otf; do \
 			font=$$(basename "$$file" .otf); \
-			python3 scripts/render_text.py "$$file" '$(SAMPLE_TEXT)' "$(SAMPLE_DIR)/$$font.png"; \
-			echo "Generated PNG with Syriac sample text using font: $$file"; \
-		fi; \
+			python3 scripts/render_text.py "$$file" $(SAMPLE_TEXT) "$(SAMPLE_DIR)/$$font.png"; \
 	done
 
-.PHONY: clean test install build move open venv all generate-svg generate-png
+.PHONY: clean test install build open venv all generate-svg generate-png
