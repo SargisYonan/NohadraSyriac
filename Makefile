@@ -31,7 +31,7 @@ build:
 	done
 
 install: build
-	./install_mac.command
+	./install_fonts.sh
 
 test: venv
 	. venv/bin/activate; \
