@@ -3,6 +3,8 @@
 ![CI Status](https://github.com/SargisYonan/NohadraSyriacFonts/actions/workflows/fontbakery.yml/badge.svg)
 
 Nohadra fonts are a bold, geometric, and monospaced Syriac typeface.
+![Nohadra - Sapna](samples/NohadraSyriac-Sapna-nohadra-sample.png)
+![Nohadra - Amedia](samples/NohadraSyriac-Amedia-nohadra-sample.png)
 
 ## Introduction
 
@@ -11,12 +13,14 @@ The Nohadra Syriac Font family includes Syriac typefaces with square, block-like
 ## Samples
 
 ### Nohadra - Sapna
-![Nohadra - Sapna](samples/NohadraSyriac-Sapna.png)
+![Nohadra - Amedia](samples//NohadraSyriac-Sapna-nohadra-sapna-text.png)
 Sapna is a monospaced and minimal block style Syriac typeface.
+![Nohadra - Sapna](samples/NohadraSyriac-Sapna.png)
 
 ### Nohadra - Amedia
-![Nohadra - Amedia](samples//NohadraSyriac-Amedia.png)
+![Nohadra - Amedia](samples//NohadraSyriac-Amedia-nohadra-amedia-text.png)
 Amedia offers the same look and feel as Sapna, but with rounder edges.
+![Nohadra - Amedia](samples//NohadraSyriac-Amedia.png)
 
 ### More to come
 

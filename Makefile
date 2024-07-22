@@ -5,7 +5,6 @@ FONTS_DIR := fonts
 GLYPH_FILES := $(foreach dir, $(OUTPUT_DIRS), $(shell find $(dir) -name '*.glyphs' | grep -v ' (Autosaved).glyphs'))
 
 SAMPLE_DIR := samples
-SAMPLE_TEXT := "ܥܠ ܐܪܥܐ ܫܠܡܐ ܘܣܒܪܐ ܛܒܐ ܠܒܪܢܫ̈ܐ"
 
 all: build generate-png install test
 
@@ -59,7 +58,10 @@ generate-png: venv
 	. venv/bin/activate && \
 	for file in $(FONTS_DIR)/*.otf; do \
 			font=$$(basename "$$file" .otf); \
-			python3 scripts/render_text.py "$$file" $(SAMPLE_TEXT) "$(SAMPLE_DIR)/$$font.png"; \
+			python3 scripts/render_text.py "$$file" "ܥܠ ܐܪܥܐ ܫܠܡܐ ܘܣܒܪܐ ܛܒܐ ܠܒܪܢܫ̈ܐ" "$(SAMPLE_DIR)/$$font.png"; \
+			python3 scripts/render_text.py "$$file" "ܢܘܗܕܪܐ" "$(SAMPLE_DIR)/$$font-nohadra-sample.png"; \
+			python3 scripts/render_text.py "$$file" "ܣܦܢܐ" "$(SAMPLE_DIR)/$$font-nohadra-sapna-text.png"; \
+			python3 scripts/render_text.py "$$file" "ܐܡܕܝܐ" "$(SAMPLE_DIR)/$$font-nohadra-amedia-text.png"; \
 	done
 
 .PHONY: clean test install build open venv all generate-svg generate-png

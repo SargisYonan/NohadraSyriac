@@ -9,7 +9,11 @@ def clean_text(text):
     return ''.join(c for c in text if unicodedata.category(c).startswith('L') or c.isspace())
 
 def render_text_to_image(font_path, text, output_path):
-    width, height = 4600, 500
+    
+    font_size = 400
+    
+    width = int((len(text)*font_size) / 2.2)
+    height = 350
 
     # Create a new image with a white background
     image = Image.new('RGB', (width, height), color='white')
@@ -18,7 +22,6 @@ def render_text_to_image(font_path, text, output_path):
     reshaped_text = arabic_reshaper.reshape(clean_text(text))
     
     # Load the font
-    font_size = 400
     font = ImageFont.truetype(font_path, font_size)
 
     # Calculate text width and height for centering
@@ -26,7 +29,7 @@ def render_text_to_image(font_path, text, output_path):
     bbox = draw.textbbox((0, 0), reshaped_text, font=font)
     text_width, text_height = bbox[2] - bbox[0], bbox[3] - bbox[1]
     text_x = (width - text_width) // 2
-    text_y = ((height - text_height) // 2) - text_height/2
+    text_y = ((text_height) // 2) - text_height
 
     # Draw the text on the image
     text_color = (0, 0, 0)  # Black color
