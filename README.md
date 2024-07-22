@@ -2,11 +2,11 @@
 
 ![CI Status](https://github.com/SargisYonan/NohadraSyriacFonts/actions/workflows/fontbakery.yml/badge.svg)
 
-Nohadra fonts are a bold, geometric, and modern monospaced Syriac typeface.
+Nohadra fonts are a bold, geometric, and monospaced Syriac typeface.
 
 ## Introduction
 
-The Nohadra Syriac Font family includes bold, geometric, and modern monospaces Syriac typefaces with square, block-like characters and uniform line thickness. This font offers high legibility and a minimalistic design, making it ideal for headlines, signage, and digital interfaces. 
+The Nohadra Syriac Font family includes Syriac typefaces with square, block-like characters and uniform line thickness. This font offers a modern and minimalistic design and feel. 
 
 ## Samples
 
