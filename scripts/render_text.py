@@ -9,7 +9,7 @@ def clean_text(text):
     return ''.join(c for c in text if unicodedata.category(c).startswith('L') or c.isspace())
 
 def render_text_to_image(font_path, text, output_path):
-    width, height = 5000, 500
+    width, height = 4600, 500
 
     # Create a new image with a white background
     image = Image.new('RGB', (width, height), color='white')
@@ -33,7 +33,7 @@ def render_text_to_image(font_path, text, output_path):
     draw.text((text_x, text_y), reshaped_text, fill=text_color, font=font)
 
     # Save the image
-    image.save(output_path)
+    image.save(output_path, dpi=(10000,10000))
     print(f"Image saved to {output_path}")
 
 if __name__ == "__main__":
