@@ -23,54 +23,14 @@ Amedia offers the same look and feel as Sapna, but with rounder edges.
 ## Installation
 To install the Nohadra Syriac Font on your system, follow the instructions for your operating system below.
 
-First begin by downloading or cloning this repository.
+First begin by downloading or cloning this repository, and navigate to the directory containing this project.
 
-### macOS Instructions
+### macOS/Linux/Windows Instructions
 
-To install the Nohadra Syriac Fonts onto your system, follow these steps:
-
-1. Open Terminal
-2. Navigate to the directory containing `install_mac.command`:
-```sh
-   cd path/to/NohadraSyriacFonts
-```
-3. Make the script executable (if it isn't already):
-```sh
-chmod +x install_mac.command
-```
 4. Run the script:
 ```sh
-./install_mac.command
+./install_fonts.sh
 ```
-
-The script will copy the font files to the appropriate directory and refresh the font cache.
-
-### Windows
-1. Open PowerShell with administrative privileges.
-2. Navigate to the directory containing install_fonts.ps1:
-```powershell
-cd path/to/NohadraSyriacFonts
-```
-3. Run the script:
-```powershell
-./install_windows.ps1
-```
-
-### Linux/Unix
-1. Open Terminal
-2. Navigate to the directory containing `install_linux.sh`:
-```sh
-   cd path/to/NohadraSyriacFonts
-```
-3. Make the script executable (if it isn't already):
-```sh
-chmod +x install_linux.sh
-```
-4. Run the script:
-```sh
-./install_linux.sh
-```
-
 
 ## Contributing
 
