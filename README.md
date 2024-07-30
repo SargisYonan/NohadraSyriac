@@ -39,7 +39,7 @@ Amedia offers the same look and feel as Sapna, but with rounder edges. [View sam
 ### More to come
 
 ## Installation
-To install the Nohadra Syriac Font on your system, follow the instructions for your operating system below.
+To install the Nohadra Syriac Font on your system, simply install the desired font files from the `fonts/` directory, or follow the instructions below.
 
 First begin by downloading or cloning this repository, and navigate to the directory containing this project.
 

@@ -6,7 +6,7 @@ FONTS_DIR := fonts
 
 SAMPLE_DIR := samples
 
-all: build generate-png install test
+all: build generate-png install proof
 
 venv/created: requirements.txt
 	python3 -m venv venv
@@ -32,7 +32,7 @@ build:
 install: build
 	./install_fonts.sh
 
-test: venv
+proof: venv
 	. venv/bin/activate; \
 	for file in $(FONTS_DIR)/*.otf; do \
 		if [ -f "$$file" ]; then \
@@ -64,4 +64,4 @@ generate-png: venv
 			python3 scripts/render_text.py "$$file" "ܐܡܕܝܐ" "$(SAMPLE_DIR)/$$font-nohadra-amedia-text.png"; \
 	done
 
-.PHONY: clean test install build open venv all generate-svg generate-png
+.PHONY: clean proof install build open venv all generate-svg generate-png

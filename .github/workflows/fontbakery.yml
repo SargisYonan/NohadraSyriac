@@ -1,4 +1,4 @@
-name: Font Bakery QA Tests
+name: Font Bakery Proofing Tests
 
 on: [push, pull_request]
 
