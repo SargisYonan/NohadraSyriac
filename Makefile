@@ -1,8 +1,8 @@
-OUTPUT_DIRS := glyphs
+GLYPHS_DIR := glyphs
+GLYPH_FILES := $(foreach dir, $(GLYPHS_DIR), $(shell find $(dir) -name '*.glyphs' | grep -v ' (Autosaved).glyphs'))
+
 FONT_EXTENSIONS := otf ttf woff woff2
 FONTS_DIR := fonts
-
-GLYPH_FILES := $(foreach dir, $(OUTPUT_DIRS), $(shell find $(dir) -name '*.glyphs' | grep -v ' (Autosaved).glyphs'))
 
 SAMPLE_DIR := samples
 
@@ -43,7 +43,7 @@ test: venv
 
 clean:
 	@for ext in $(FONT_EXTENSIONS); do \
-		for file in $(OUTPUT_DIRS)/*.$$ext; do \
+		for file in $(GLYPHS_DIR)/*.$$ext; do \
 			if [ -f "$$file" ]; then \
 				rm $$file; \
 			fi; \
