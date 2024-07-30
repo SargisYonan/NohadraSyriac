@@ -57,3 +57,7 @@ Contributions to the Nohadra Syriac Font project are welcome. To contribute, fee
 Currently, there is no CLI method for exporting font files, and thus must be exported by Glyphs.app. 
 
 Font kerning is also verified manually currently. Pay close attention to diacritic placement in the samples to note any changes made. The `make` command should be run for all changes as it will export the Glyphs.app fonts, proof them, and create new samples.
+
+## Licensing
+The project, and fonts contained, are distributed under the SIL Open Font License (OFL). The SIL Open Font License allows the use, modification, and distribution of fonts, provided they are not sold by themselves, and any derivatives are released under the same license with a different name to avoid confusion with the original. It promotes free sharing and improvement of fonts.
+
