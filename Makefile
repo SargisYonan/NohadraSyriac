@@ -1,4 +1,4 @@
-OUTPUT_DIRS := nohadra
+OUTPUT_DIRS := glyphs
 FONT_EXTENSIONS := otf ttf woff woff2
 FONTS_DIR := fonts
 
