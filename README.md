@@ -52,4 +52,8 @@ First begin by downloading or cloning this repository, and navigate to the direc
 
 ## Contributing
 
-Contributions to the Nohadra Syriac Font project are welcome. To contribute, feel free to put up a pull request with a detailed description of your change. Note, the Makefile includes a proofing target that should be run before pull requests are posted. Currently, there is no CLI method for export font files. They must be exported by Glyphs.app. Font kerning is also verifies manually currently. Pay close attention to diacritic placement in the samples to note any changes made. The `make` command should be run for all changes as it will export the Glyphs.app fonts, proof them, and create new samples.
+Contributions to the Nohadra Syriac Font project are welcome. To contribute, feel free to put up a pull request with a detailed description of your change.
+
+Currently, there is no CLI method for exporting font files, and thus must be exported by Glyphs.app. 
+
+Font kerning is also verified manually currently. Pay close attention to diacritic placement in the samples to note any changes made. The `make` command should be run for all changes as it will export the Glyphs.app fonts, proof them, and create new samples.
