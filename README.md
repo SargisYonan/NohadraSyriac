@@ -18,7 +18,7 @@ The Nohadra Syriac Font family includes Syriac typefaces with square, block-like
   <img src="samples/NohadraSyriac-Sapna-nohadra-sapna-text.png" alt="" width="400"/>
 </p>
 
-Sapna is a monospaced and minimal block style Syriac typeface. [View sample text](samples/index-sapna.html)
+Sapna is a monospaced and minimal block style Syriac typeface. [View sample text](https://yonan.org/fonts/nohadrasyriac/nohadrasyriac-sapna.html)
 
 
 <p align="center">
@@ -30,7 +30,7 @@ Sapna is a monospaced and minimal block style Syriac typeface. [View sample text
   <img src="samples/NohadraSyriac-Amedia-nohadra-amedia-text.png" alt="" width="400"/>
 </p>
 
-Amedia offers the same look and feel as Sapna, but with rounder edges. [View sample text](samples/index-amedia.html)
+Amedia offers the same look and feel as Sapna, but with rounder edges. [View sample text](https://yonan.org/fonts/nohadrasyriac/nohadrasyriac-amedia.html)
 
 <p align="center">
   <img src="samples/NohadraSyriac-Amedia.png" alt="" width="3000"/>
