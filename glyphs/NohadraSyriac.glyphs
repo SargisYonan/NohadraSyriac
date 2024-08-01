@@ -4,7 +4,8 @@
 DisplayStrings = (
 "ܨ",
 "/uni0728.fina",
-"/uni07200710.isol"
+"/uni07200710.isol",
+"ܝ"
 );
 axes = (
 {
@@ -28392,5 +28393,5 @@ name = "Horizontal Stem";
 );
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 1;
+versionMinor = 2;
 }
