@@ -3,7 +3,8 @@
 .formatVersion = 3;
 DisplayStrings = (
 "ܨ",
-"/uni0728.fina"
+"/uni0728.fina",
+"/uni07200710.isol"
 );
 axes = (
 {
