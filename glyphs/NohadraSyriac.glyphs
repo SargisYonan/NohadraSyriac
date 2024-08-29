@@ -2,11 +2,8 @@
 .appVersion = "3260";
 .formatVersion = 3;
 DisplayStrings = (
-"ܨ",
-"/uni0728.fina",
-"/uni07200710.isol",
-"ܝ",
-"ܙ"
+"ܙ",
+"/uni0719.fina"
 );
 axes = (
 {
@@ -4554,17 +4551,17 @@ note = uni0718.fina;
 },
 {
 glyphname = uni0719;
-lastChange = "2024-08-29 04:53:54 +0000";
+lastChange = "2024-08-29 05:00:28 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (102,-141);
+pos = (102,-181);
 },
 {
 name = top;
-pos = (102,242);
+pos = (102,282);
 }
 );
 hints = (
@@ -4646,17 +4643,17 @@ unicode = 1817;
 },
 {
 glyphname = uni0719.fina;
-lastChange = "2024-07-22 05:40:49 +0000";
+lastChange = "2024-08-29 05:01:54 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (102,-121);
+pos = (102,-181);
 },
 {
 name = top;
-pos = (102,222);
+pos = (102,282);
 }
 );
 hints = (
