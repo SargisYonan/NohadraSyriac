@@ -13,7 +13,7 @@ def render_text_to_image(font_path, text, output_path):
     font_size = 400
     
     width = int((len(text)*font_size) / 2.2)
-    height = 350
+    height = 400
 
     # Create a new image with a white background
     image = Image.new('RGB', (width, height), color='white')
