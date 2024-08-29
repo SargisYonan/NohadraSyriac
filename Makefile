@@ -60,7 +60,7 @@ generate-png: venv
 			font=$$(basename "$$file" .otf); \
 			python3 scripts/render_text.py "$$file" "ܥܠ ܐܪܥܐ ܫܠܡܐ ܘܣܒܪܐ ܛܒܐ ܠܒܪܢܫ̈ܐ" "$(SAMPLE_DIR)/$$font.png"; \
 			python3 scripts/render_text.py "$$file" "ܢܘܗܕܪܐ" "$(SAMPLE_DIR)/$$font-nohadra-sample.png"; \
-			python3 scripts/render_text.py "$$file" "ܣܦܢܐ" "$(SAMPLE_DIR)/$$font-nohadra-sapna-text.png"; \
+			python3 scripts/render_text.py "$$file" "ܨܦܢܐ" "$(SAMPLE_DIR)/$$font-nohadra-sapna-text.png"; \
 			python3 scripts/render_text.py "$$file" "ܐܡܕܝܐ" "$(SAMPLE_DIR)/$$font-nohadra-amedia-text.png"; \
 	done
 
