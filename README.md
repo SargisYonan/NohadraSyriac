@@ -2,7 +2,7 @@
 
 ![CI Status](https://github.com/SargisYonan/NohadraSyriacFonts/actions/workflows/fontbakery.yml/badge.svg)
 
-Nohadra fonts are a bold, geometric, and monospaced Syriac typeface.
+Nohadra fonts are a bold, geometric, and (mostly) monospaced Syriac typeface.
 <p align="center">
   <img src="samples/NohadraSyriac-Sapna-nohadra-sample.png" alt="" width="300"/> <img src="samples/NohadraSyriac-Amedia-nohadra-sample.png" alt="" width="300"/>
 </p>
@@ -18,7 +18,7 @@ The Nohadra Syriac Font family includes Syriac typefaces with square, block-like
   <img src="samples/NohadraSyriac-Sapna-nohadra-sapna-text.png" alt="" width="400"/>
 </p>
 
-Sapna is a monospaced and minimal block style Syriac typeface. [View sample text](https://yonan.org/fonts/nohadrasyriac/nohadrasyriac-sapna.html)
+Sapna is a minimal block style Syriac typeface. [View sample text](https://yonan.org/fonts/nohadrasyriac/nohadrasyriac-sapna.html)
 
 
 <p align="center">
@@ -35,8 +35,6 @@ Amedia offers the same look and feel as Sapna, but with rounder edges. [View sam
 <p align="center">
   <img src="samples/NohadraSyriac-Amedia.png" alt="" width="3000"/>
 </p>
-
-### More to come
 
 ## Installation
 To install the Nohadra Syriac Font on your system, simply install the desired OTF font files from the `fonts/` directory from the latest tagged version of the project. See [latest releases](https://github.com/SargisYonan/NohadraSyriac/releases). Alternatively, follow the instructions below to get the latest beta.
