@@ -28387,5 +28387,5 @@ name = "Horizontal Stem";
 );
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 5;
+versionMinor = 6;
 }
