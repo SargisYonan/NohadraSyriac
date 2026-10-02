@@ -1,0 +1,71 @@
+# Problems looked at and accepted as intentional. qa/check.py and the tests
+# skip anything listed here.
+#
+#   <glyph> <check>                   # why
+#   * <check>                         # silence a check everywhere
+#   <glyph> <check> <mark>            # excuse one mark (mark-clearance,
+#   * <check> <mark>                  #   mark-neighbour, mark-stack)
+
+# Not drawn, and not needed: none. Every Syriac letter is drawn.
+
+# Every stroke in Nohadra ends in a square cut, joining or not.
+* stub
+
+# The breve below is drawn as a bracket hanging from the letter: it is meant
+# to touch it, and whatever stands beside it.
+* mark-clearance uni032E
+* mark-neighbour uni032E
+* mark-stack uni032E
+
+# Ptaha (U+0732) is always split into uni0732.above and uni0732.below by ccmp,
+# so the whole glyph is never placed on a letter.
+* mark-clearance uni0732
+
+# Dot above left and dot below left have no anchor on purpose: with no
+# advance, they are drawn at the left edge of the letter before them in the
+# text, which is where they belong.
+uni1DF8 unattached
+uni1DFA unattached
+
+# Waw's inner notch stops at 190, short of the 182/202 heights other letters
+# use. It is the same in both styles and reads as part of Waw's shape.
+uni0718 off-level
+uni0718.fina off-level
+
+# The syame and the diaeresis below are two strokes wide (238 units): on
+# the narrowest letters (Nun, Zain, Yudh) they reach over the letter beside.
+# Every pair below was looked at; each needs that mark on a narrow letter
+# next to a tall one. Same as in 1.7.
+uni0710 mark-neighbour uni0308      # e.g. ܐܢ̈
+uni0715 mark-neighbour uni0308      # e.g. ܕܢ̈
+uni0716 mark-neighbour uni0308      # e.g. ܖܢ̈
+uni0717 mark-neighbour uni0308      # e.g. ܗܢ̈
+uni0718 mark-neighbour uni0308      # e.g. ܘܢ̈
+uni0719 mark-neighbour uni0308      # e.g. ܙܢ̈
+uni0719 mark-neighbour uni0324      # e.g. ܙܝ̤
+uni071E mark-neighbour uni0308      # e.g. ܞܢ̈
+uni0720 mark-neighbour uni0308      # e.g. ܙ̈ܠ
+uni0722.fina mark-neighbour uni0324 # e.g. ܒܢ̤ܢ
+uni0722.init mark-neighbour uni0308 # e.g. ܢܢ̈
+uni0727.init mark-neighbour uni0308 # e.g. ܧܢ̈
+uni0728 mark-neighbour uni0324      # e.g. ܨܙ̤
+uni072A mark-neighbour uni0308      # e.g. ܪܢ̈
+uni072C mark-neighbour uni0308      # e.g. ܬܢ̈
+
+# Amedia rounds the inside of Heth's cups and of the corners where Final
+# Semkath's tail meets it, in every form; other inside corners are sharp.
+# Yudh and Lamadh's rounded inner corners match Heth's. The joint inside
+# Lamadh-Alaph is left sharp where the two letters meet.
+uni071A corner
+uni071A.fina corner
+uni071A.medi corner
+uni071A.init corner
+uni071D corner
+uni0720 corner
+uni0724 corner
+uni0724.fina corner
+uni0724.medi corner
+uni0724.init corner
+uni072C0710.fina corner
+uni07200710 corner
+uni07200710.fina corner

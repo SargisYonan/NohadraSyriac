@@ -1,4 +1,7 @@
-fontbakery
-arabic-reshaper==3.0.0
-python-bidi==0.4.2
-pillow==10.4.0
+fontmake>=3.12
+glyphsLib>=6.15
+fonttools>=4.66
+skia-pathops>=0.8
+uharfbuzz>=0.56
+pytest>=8
+fontbakery>=1.1

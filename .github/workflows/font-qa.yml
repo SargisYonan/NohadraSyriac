@@ -1,0 +1,59 @@
+# Builds both Nohadra styles from glyphs/NohadraSyriac.glyphs and checks them
+# on every push and pull request. The job fails if QA finds an error, a test
+# fails, or fontbakery reports a failure. The fonts, proofs, reports and a
+# visual diff against the last release are attached to each run.
+name: Font QA
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # make diff needs the last release tag
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Build, QA, tests, fontbakery, proofs
+        run: make ci
+
+      - name: Diff against the last release
+        run: |
+          tag=$(git describe --tags --abbrev=0 --match 'NohadraSyriac-v*' HEAD^ 2>/dev/null || true)
+          if [ -n "$tag" ]; then make diff BEFORE="$tag"; fi
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## QA"
+            for f in fonts/*.otf; do
+              echo '```'
+              FONT=$f venv/bin/python qa/check.py 2>&1 | tail -n 20 || true
+              echo '```'
+            done
+            [ -f out/fontbakery.md ] && cat out/fontbakery.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload fonts, proofs and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nohadra-qa
+          path: |
+            fonts/*.otf
+            out/*/proof.html
+            out/*/qa.json
+            out/diff.html
+            out/fontbakery.html
+            out/fontbakery.md
+            documentation/**/*.svg
